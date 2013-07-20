@@ -110,3 +110,51 @@ Served asset /jquery.js - 304 Not Modified (3ms)
 
 Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-07-21 02:34:51 +0700
 Served asset /welcome.js - 304 Not Modified (1ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2013-07-21 02:47:54 +0700
+Served asset /rails.png - 304 Not Modified (11ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2013-07-21 02:49:23 +0700
+Served asset /rails.png - 304 Not Modified (11ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2013-07-21 02:49:26 +0700
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2013-07-21 02:49:28 +0700
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/welcome/index/" for 127.0.0.1 at 2013-07-21 02:49:44 +0700
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 145ms (Views: 142.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-21 02:49:44 +0700
+Served asset /application.css - 200 OK (123ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2013-07-21 02:49:45 +0700
+Served asset /welcome.css - 200 OK (10ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-21 02:49:45 +0700
+Served asset /jquery.js - 200 OK (19ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-21 02:49:45 +0700
+Served asset /jquery_ujs.js - 200 OK (16ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-07-21 02:49:45 +0700
+Served asset /welcome.js - 200 OK (14ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-21 02:49:45 +0700
+Served asset /application.js - 200 OK (41ms)
