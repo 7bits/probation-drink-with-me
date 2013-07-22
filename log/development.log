@@ -746,3 +746,1589 @@ Served asset /application.js - 304 Not Modified (10ms)
 
 Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-07-22 13:16:05 +0700
 Served asset /welcome.js - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-22 14:26:33 +0700
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (4.4ms)
+Compiled application.css  (2ms)  (pid 24674)
+Compiled application.js  (14ms)  (pid 24674)
+Completed 200 OK in 261ms (Views: 258.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-22 14:26:35 +0700
+Served asset /application.css - 200 OK (30ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-22 14:26:35 +0700
+Served asset /jquery.js - 304 Not Modified (26ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-22 14:26:35 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (24ms)
+
+
+Started GET "/assets/local-video.js?body=1" for 127.0.0.1 at 2013-07-22 14:26:35 +0700
+Served asset /local-video.js - 304 Not Modified (31ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-22 14:26:35 +0700
+Served asset /application.js - 304 Not Modified (58ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-07-22 14:26:35 +0700
+Served asset /welcome.js - 304 Not Modified (9ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-22 22:02:13 +0700
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 176ms (Views: 174.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-22 22:02:14 +0700
+Served asset /application.css - 200 OK (17ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-22 22:02:14 +0700
+Served asset /jquery.js - 200 OK (221ms)
+
+
+Started GET "/assets/local-video.js?body=1" for 127.0.0.1 at 2013-07-22 22:02:14 +0700
+Served asset /local-video.js - 200 OK (28ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-22 22:02:14 +0700
+Served asset /jquery_ujs.js - 200 OK (13ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-07-22 22:02:14 +0700
+Served asset /welcome.js - 200 OK (10ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-22 22:02:14 +0700
+Served asset /application.js - 200 OK (37ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-22 22:13:31 +0700
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 132ms (Views: 130.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-22 22:13:31 +0700
+Served asset /application.css - 200 OK (67ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-22 22:13:31 +0700
+Served asset /jquery_ujs.js - 200 OK (101ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-22 22:13:31 +0700
+Served asset /jquery.js - 200 OK (43ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-22 22:13:31 +0700
+Served asset /application.js - 200 OK (78ms)
+
+
+Started GET "/assets/local-video.js?body=1" for 127.0.0.1 at 2013-07-22 22:13:31 +0700
+Served asset /local-video.js - 200 OK (12ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-07-22 22:13:31 +0700
+Served asset /welcome.js - 200 OK (11ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-22 23:32:41 +0700
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 203ms (Views: 200.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-22 23:32:45 +0700
+Served asset /jquery.js - 304 Not Modified (190ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-22 23:32:45 +0700
+Served asset /application.css - 304 Not Modified (16ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-22 23:32:45 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (38ms)
+
+
+Started GET "/assets/local-video.js?body=1" for 127.0.0.1 at 2013-07-22 23:32:45 +0700
+Served asset /local-video.js - 304 Not Modified (18ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-07-22 23:32:45 +0700
+Served asset /welcome.js - 304 Not Modified (19ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-22 23:32:45 +0700
+Served asset /application.js - 304 Not Modified (52ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-23 01:03:50 +0700
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 349ms (Views: 347.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-23 01:03:51 +0700
+Served asset /application.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-23 01:03:51 +0700
+Served asset /jquery.js - 304 Not Modified (76ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-23 01:03:51 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/local-video.js?body=1" for 127.0.0.1 at 2013-07-23 01:03:51 +0700
+Served asset /local-video.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-23 01:03:51 +0700
+Served asset /application.js - 304 Not Modified (50ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-07-23 01:03:51 +0700
+Served asset /welcome.js - 304 Not Modified (9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-23 01:10:48 +0700
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.2ms)
+Compiled application.css  (2ms)  (pid 29343)
+Completed 200 OK in 100ms (Views: 99.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-23 01:10:48 +0700
+Served asset /application.css - 200 OK (68ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-23 01:10:48 +0700
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-07-23 01:10:48 +0700
+Served asset /welcome.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/local-video.js?body=1" for 127.0.0.1 at 2013-07-23 01:10:48 +0700
+Served asset /local-video.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-23 01:10:48 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-23 01:10:48 +0700
+Served asset /application.js - 304 Not Modified (6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-23 01:11:26 +0700
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 61ms (Views: 60.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-23 01:11:27 +0700
+Served asset /application.css - 304 Not Modified (12ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-23 01:11:27 +0700
+Served asset /jquery.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-23 01:11:27 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/local-video.js?body=1" for 127.0.0.1 at 2013-07-23 01:11:27 +0700
+Served asset /local-video.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-07-23 01:11:27 +0700
+Served asset /welcome.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-23 01:11:27 +0700
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-23 01:15:11 +0700
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.2ms)
+Compiled application.css  (1ms)  (pid 29343)
+Completed 200 OK in 147ms (Views: 146.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-23 01:15:11 +0700
+Served asset /application.css - 200 OK (74ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-07-23 01:15:12 +0700
+Served asset /welcome.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-23 01:15:12 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-23 01:15:12 +0700
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/local-video.js?body=1" for 127.0.0.1 at 2013-07-23 01:15:12 +0700
+Served asset /local-video.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-23 01:15:12 +0700
+Served asset /application.js - 304 Not Modified (11ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-23 01:21:36 +0700
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Compiled application.js  (2ms)  (pid 29343)
+Completed 200 OK in 84ms (Views: 83.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-23 01:21:36 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-23 01:21:36 +0700
+Served asset /application.js - 200 OK (11ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-23 01:22:12 +0700
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Compiled application.css  (1ms)  (pid 29343)
+Completed 200 OK in 116ms (Views: 115.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-23 01:22:14 +0700
+Served asset /application.js - 200 OK (2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-23 01:22:14 +0700
+Served asset /application.css - 200 OK (15ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-23 01:22:50 +0700
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Compiled application.js  (1ms)  (pid 29343)
+Completed 200 OK in 40ms (Views: 39.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-23 01:22:50 +0700
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-23 01:22:50 +0700
+Served asset /application.js - 200 OK (18ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-23 01:22:57 +0700
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 14ms (Views: 13.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-23 01:22:57 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-23 01:22:58 +0700
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-23 01:23:36 +0700
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 19ms (Views: 18.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-23 01:23:37 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-23 01:23:37 +0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-23 01:24:35 +0700
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 22ms (Views: 21.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-23 01:24:36 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-23 01:24:36 +0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-23 01:25:29 +0700
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Compiled local-video.js  (1ms)  (pid 29343)
+Compiled application.js  (237ms)  (pid 29343)
+Completed 200 OK in 393ms (Views: 392.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-23 01:25:30 +0700
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 42ms (Views: 41.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-23 01:25:30 +0700
+Served asset /jquery.js - 304 Not Modified (43ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-23 01:25:31 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-23 01:25:31 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-07-23 01:25:31 +0700
+Served asset /welcome.js - 304 Not Modified (91ms)
+
+
+Started GET "/assets/local-video.js?body=1" for 127.0.0.1 at 2013-07-23 01:25:31 +0700
+Served asset /local-video.js - 200 OK (12ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-23 01:25:31 +0700
+Served asset /application.js - 200 OK (44ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-23 01:26:14 +0700
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Compiled local-video.js  (1ms)  (pid 29343)
+Compiled application.js  (25ms)  (pid 29343)
+Completed 200 OK in 171ms (Views: 170.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-23 01:26:15 +0700
+Served asset /jquery.js - 304 Not Modified (17ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-23 01:26:15 +0700
+Served asset /application.css - 304 Not Modified (32ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-23 01:26:15 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/local-video.js?body=1" for 127.0.0.1 at 2013-07-23 01:26:15 +0700
+Served asset /local-video.js - 200 OK (14ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-07-23 01:26:15 +0700
+Served asset /welcome.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-23 01:26:15 +0700
+Served asset /application.js - 200 OK (56ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-23 01:26:22 +0700
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 48ms (Views: 46.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-23 01:26:22 +0700
+Served asset /application.css - 304 Not Modified (22ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-23 01:26:22 +0700
+Served asset /jquery.js - 304 Not Modified (13ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-23 01:26:23 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-07-23 01:26:23 +0700
+Served asset /welcome.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/local-video.js?body=1" for 127.0.0.1 at 2013-07-23 01:26:23 +0700
+Served asset /local-video.js - 200 OK (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-23 01:26:23 +0700
+Served asset /application.js - 304 Not Modified (7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-23 01:26:42 +0700
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 36ms (Views: 35.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-23 01:26:43 +0700
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-23 01:26:43 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-07-23 01:26:43 +0700
+Served asset /welcome.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-23 01:26:43 +0700
+Served asset /application.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-23 01:26:43 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/local-video.js?body=1" for 127.0.0.1 at 2013-07-23 01:26:43 +0700
+Served asset /local-video.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-23 01:27:04 +0700
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Compiled local-video.js  (1ms)  (pid 29343)
+Compiled application.js  (14ms)  (pid 29343)
+Completed 200 OK in 185ms (Views: 184.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-23 01:27:04 +0700
+Served asset /jquery.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-23 01:27:04 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-07-23 01:27:04 +0700
+Served asset /welcome.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/local-video.js?body=1" for 127.0.0.1 at 2013-07-23 01:27:04 +0700
+Served asset /local-video.js - 200 OK (10ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-23 01:27:05 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-23 01:27:05 +0700
+Served asset /application.js - 304 Not Modified (48ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-23 01:27:22 +0700
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Compiled local-video.js  (1ms)  (pid 29343)
+Compiled application.js  (14ms)  (pid 29343)
+Completed 200 OK in 488ms (Views: 487.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-23 01:27:23 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/local-video.js?body=1" for 127.0.0.1 at 2013-07-23 01:27:23 +0700
+Served asset /local-video.js - 200 OK (12ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-07-23 01:27:23 +0700
+Served asset /welcome.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-23 01:27:23 +0700
+Served asset /application.js - 304 Not Modified (41ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-23 01:27:23 +0700
+Served asset /jquery.js - 304 Not Modified (74ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-23 01:27:23 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-23 01:27:35 +0700
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Compiled local-video.js  (1ms)  (pid 29343)
+Compiled application.js  (14ms)  (pid 29343)
+Completed 200 OK in 117ms (Views: 116.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-23 01:27:35 +0700
+Served asset /jquery.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/local-video.js?body=1" for 127.0.0.1 at 2013-07-23 01:27:35 +0700
+Served asset /local-video.js - 200 OK (19ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-23 01:27:35 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-23 01:27:35 +0700
+Served asset /application.js - 304 Not Modified (157ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-23 01:27:35 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-07-23 01:27:35 +0700
+Served asset /welcome.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-23 01:27:46 +0700
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 43ms (Views: 42.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-07-23 01:27:47 +0700
+Served asset /welcome.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-23 01:27:47 +0700
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-23 01:27:47 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-23 01:27:47 +0700
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-23 01:27:47 +0700
+Served asset /application.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/local-video.js?body=1" for 127.0.0.1 at 2013-07-23 01:27:47 +0700
+Served asset /local-video.js - 304 Not Modified (1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-23 01:28:55 +0700
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Compiled application.css  (1ms)  (pid 29343)
+Completed 200 OK in 120ms (Views: 119.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-23 01:28:57 +0700
+Served asset /application.css - 200 OK (10ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-23 01:28:57 +0700
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/local-video.js?body=1" for 127.0.0.1 at 2013-07-23 01:28:57 +0700
+Served asset /local-video.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-23 01:28:57 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-07-23 01:28:57 +0700
+Served asset /welcome.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-23 01:28:57 +0700
+Served asset /application.js - 304 Not Modified (7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-23 01:29:46 +0700
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Compiled application.css  (1ms)  (pid 29343)
+Completed 200 OK in 102ms (Views: 101.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-23 01:29:47 +0700
+Served asset /application.css - 200 OK (29ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-23 01:29:47 +0700
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-07-23 01:29:47 +0700
+Served asset /welcome.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-23 01:29:47 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-23 01:29:47 +0700
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/local-video.js?body=1" for 127.0.0.1 at 2013-07-23 01:29:47 +0700
+Served asset /local-video.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-23 01:30:01 +0700
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 45ms (Views: 43.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-23 01:30:01 +0700
+Served asset /application.css - 200 OK (30ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-23 01:30:01 +0700
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/local-video.js?body=1" for 127.0.0.1 at 2013-07-23 01:30:01 +0700
+Served asset /local-video.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-23 01:30:01 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-23 01:30:01 +0700
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-07-23 01:30:01 +0700
+Served asset /welcome.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-23 01:34:32 +0700
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.2ms)
+Compiled local-video.js  (1ms)  (pid 29343)
+Compiled application.js  (41ms)  (pid 29343)
+Completed 200 OK in 259ms (Views: 258.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-23 01:34:33 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-23 01:34:33 +0700
+Served asset /jquery.js - 304 Not Modified (20ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-23 01:34:33 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-23 01:34:33 +0700
+Served asset /application.js - 304 Not Modified (225ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-07-23 01:34:33 +0700
+Served asset /welcome.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/local-video.js?body=1" for 127.0.0.1 at 2013-07-23 01:34:33 +0700
+Served asset /local-video.js - 200 OK (14ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-23 01:35:25 +0700
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Compiled local-video.js  (2ms)  (pid 29343)
+Compiled application.js  (28ms)  (pid 29343)
+Completed 200 OK in 191ms (Views: 190.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-23 01:35:26 +0700
+Served asset /application.css - 304 Not Modified (47ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-07-23 01:35:26 +0700
+Served asset /welcome.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-23 01:35:26 +0700
+Served asset /application.js - 304 Not Modified (125ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-23 01:35:26 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/local-video.js?body=1" for 127.0.0.1 at 2013-07-23 01:35:26 +0700
+Served asset /local-video.js - 200 OK (9ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-23 01:35:26 +0700
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-23 01:36:29 +0700
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 54ms (Views: 53.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-23 01:36:30 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-23 01:36:30 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/local-video.js?body=1" for 127.0.0.1 at 2013-07-23 01:36:30 +0700
+Served asset /local-video.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-23 01:36:30 +0700
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-23 01:36:30 +0700
+Served asset /application.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-07-23 01:36:30 +0700
+Served asset /welcome.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-23 01:36:52 +0700
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 43ms (Views: 42.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-23 01:36:52 +0700
+Served asset /application.css - 304 Not Modified (18ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-23 01:36:52 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (27ms)
+
+
+Started GET "/assets/local-video.js?body=1" for 127.0.0.1 at 2013-07-23 01:36:52 +0700
+Served asset /local-video.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-23 01:36:52 +0700
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-07-23 01:36:52 +0700
+Served asset /welcome.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-23 01:36:52 +0700
+Served asset /application.js - 304 Not Modified (6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-23 01:36:57 +0700
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 72ms (Views: 71.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-23 01:36:58 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-23 01:36:59 +0700
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-23 01:36:59 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (20ms)
+
+
+Started GET "/assets/local-video.js?body=1" for 127.0.0.1 at 2013-07-23 01:36:59 +0700
+Served asset /local-video.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-07-23 01:36:59 +0700
+Served asset /welcome.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-23 01:36:59 +0700
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-23 01:41:28 +0700
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Compiled local-video.js  (2ms)  (pid 29343)
+Compiled application.js  (23ms)  (pid 29343)
+Completed 200 OK in 250ms (Views: 249.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-23 01:41:29 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-23 01:41:29 +0700
+Served asset /jquery.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-23 01:41:29 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/local-video.js?body=1" for 127.0.0.1 at 2013-07-23 01:41:29 +0700
+Served asset /local-video.js - 200 OK (13ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-07-23 01:41:29 +0700
+Served asset /welcome.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-23 01:41:29 +0700
+Served asset /application.js - 304 Not Modified (66ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-23 01:41:55 +0700
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 70ms (Views: 69.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-23 01:41:56 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-23 01:41:56 +0700
+Served asset /jquery.js - 304 Not Modified (21ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-23 01:41:57 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/local-video.js?body=1" for 127.0.0.1 at 2013-07-23 01:41:57 +0700
+Served asset /local-video.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-23 01:41:57 +0700
+Served asset /application.js - 304 Not Modified (102ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-07-23 01:41:57 +0700
+Served asset /welcome.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-23 01:42:30 +0700
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Compiled application.css  (2ms)  (pid 29343)
+Completed 200 OK in 203ms (Views: 201.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-23 01:42:31 +0700
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-23 01:42:31 +0700
+Served asset /application.css - 200 OK (14ms)
+
+
+Started GET "/assets/local-video.js?body=1" for 127.0.0.1 at 2013-07-23 01:42:31 +0700
+Served asset /local-video.js - 304 Not Modified (41ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-23 01:42:31 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-23 01:42:31 +0700
+Served asset /application.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-07-23 01:42:31 +0700
+Served asset /welcome.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-23 01:43:25 +0700
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Compiled local-video.js  (3ms)  (pid 29343)
+Compiled application.js  (27ms)  (pid 29343)
+Completed 200 OK in 270ms (Views: 269.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-23 01:43:27 +0700
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-23 01:43:27 +0700
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-23 01:43:27 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/local-video.js?body=1" for 127.0.0.1 at 2013-07-23 01:43:27 +0700
+Served asset /local-video.js - 200 OK (16ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-23 01:43:27 +0700
+Served asset /application.js - 304 Not Modified (86ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-07-23 01:43:27 +0700
+Served asset /welcome.js - 304 Not Modified (5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-23 01:45:38 +0700
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Compiled local-video.js  (1ms)  (pid 29343)
+Compiled application.js  (28ms)  (pid 29343)
+Completed 200 OK in 285ms (Views: 284.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-23 01:45:40 +0700
+Served asset /jquery.js - 304 Not Modified (73ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-23 01:45:40 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-23 01:45:40 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/local-video.js?body=1" for 127.0.0.1 at 2013-07-23 01:45:40 +0700
+Served asset /local-video.js - 200 OK (11ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-23 01:45:40 +0700
+Served asset /application.js - 304 Not Modified (61ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-07-23 01:45:40 +0700
+Served asset /welcome.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-23 01:47:19 +0700
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Compiled local-video.js  (1ms)  (pid 29343)
+Compiled application.js  (32ms)  (pid 29343)
+Completed 200 OK in 297ms (Views: 296.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-23 01:47:22 +0700
+Served asset /jquery.js - 304 Not Modified (37ms)
+
+
+Started GET "/assets/local-video.js?body=1" for 127.0.0.1 at 2013-07-23 01:47:22 +0700
+Served asset /local-video.js - 200 OK (9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-23 01:47:22 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-23 01:47:22 +0700
+Served asset /application.js - 304 Not Modified (42ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-07-23 01:47:22 +0700
+Served asset /welcome.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-23 01:47:22 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-23 01:47:52 +0700
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Compiled local-video.js  (5ms)  (pid 29343)
+Compiled application.js  (34ms)  (pid 29343)
+Completed 200 OK in 299ms (Views: 298.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-23 01:47:54 +0700
+Served asset /application.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-23 01:47:54 +0700
+Served asset /jquery.js - 304 Not Modified (18ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-23 01:47:54 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/local-video.js?body=1" for 127.0.0.1 at 2013-07-23 01:47:54 +0700
+Served asset /local-video.js - 200 OK (13ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-07-23 01:47:54 +0700
+Served asset /welcome.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-23 01:47:54 +0700
+Served asset /application.js - 304 Not Modified (52ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-23 01:48:23 +0700
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Compiled local-video.js  (5ms)  (pid 29343)
+Compiled application.js  (49ms)  (pid 29343)
+Completed 200 OK in 224ms (Views: 223.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-23 01:48:25 +0700
+Served asset /application.css - 304 Not Modified (137ms)
+
+
+Started GET "/assets/local-video.js?body=1" for 127.0.0.1 at 2013-07-23 01:48:25 +0700
+Served asset /local-video.js - 200 OK (9ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-23 01:48:25 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-23 01:48:25 +0700
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-23 01:48:25 +0700
+Served asset /application.js - 304 Not Modified (47ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-07-23 01:48:25 +0700
+Served asset /welcome.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-23 01:48:52 +0700
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 53ms (Views: 52.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-23 01:48:53 +0700
+Served asset /application.css - 200 OK (46ms)
+
+
+Started GET "/assets/local-video.js?body=1" for 127.0.0.1 at 2013-07-23 01:48:53 +0700
+Served asset /local-video.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-23 01:48:53 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-23 01:48:53 +0700
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-07-23 01:48:53 +0700
+Served asset /welcome.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-23 01:48:53 +0700
+Served asset /application.js - 304 Not Modified (7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-23 01:50:13 +0700
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 44ms (Views: 43.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-23 01:50:13 +0700
+Served asset /application.css - 304 Not Modified (14ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-23 01:50:13 +0700
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-23 01:50:13 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/local-video.js?body=1" for 127.0.0.1 at 2013-07-23 01:50:13 +0700
+Served asset /local-video.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-07-23 01:50:13 +0700
+Served asset /welcome.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-23 01:50:13 +0700
+Served asset /application.js - 304 Not Modified (7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-23 01:51:56 +0700
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Compiled application.css  (1ms)  (pid 29343)
+Completed 200 OK in 203ms (Views: 202.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-23 01:51:57 +0700
+Served asset /application.css - 200 OK (100ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-23 01:51:57 +0700
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-07-23 01:51:57 +0700
+Served asset /welcome.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-23 01:51:57 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/local-video.js?body=1" for 127.0.0.1 at 2013-07-23 01:51:57 +0700
+Served asset /local-video.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-23 01:51:57 +0700
+Served asset /application.js - 304 Not Modified (115ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-23 01:52:52 +0700
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.2ms)
+Compiled local-video.js  (1ms)  (pid 29343)
+Compiled application.js  (15ms)  (pid 29343)
+Completed 200 OK in 134ms (Views: 133.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-23 01:52:52 +0700
+Served asset /application.css - 304 Not Modified (17ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-23 01:52:52 +0700
+Served asset /jquery.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/local-video.js?body=1" for 127.0.0.1 at 2013-07-23 01:52:52 +0700
+Served asset /local-video.js - 200 OK (15ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-07-23 01:52:53 +0700
+Served asset /welcome.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-23 01:52:53 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-23 01:52:53 +0700
+Served asset /application.js - 304 Not Modified (139ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-23 02:06:27 +0700
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Compiled local-video.js  (1ms)  (pid 29343)
+Compiled application.js  (17ms)  (pid 29343)
+Completed 200 OK in 156ms (Views: 155.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-23 02:06:28 +0700
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-23 02:06:28 +0700
+Served asset /jquery.js - 304 Not Modified (47ms)
+
+
+Started GET "/assets/local-video.js?body=1" for 127.0.0.1 at 2013-07-23 02:06:28 +0700
+Served asset /local-video.js - 200 OK (11ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-23 02:06:28 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-07-23 02:06:28 +0700
+Served asset /welcome.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-23 02:06:28 +0700
+Served asset /application.js - 304 Not Modified (127ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-23 02:06:46 +0700
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 81ms (Views: 80.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-23 02:06:47 +0700
+Served asset /jquery.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-23 02:06:47 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-07-23 02:06:47 +0700
+Served asset /welcome.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/local-video.js?body=1" for 127.0.0.1 at 2013-07-23 02:06:47 +0700
+Served asset /local-video.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-23 02:06:47 +0700
+Served asset /application.js - 304 Not Modified (8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-23 02:07:22 +0700
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.2ms)
+Compiled local-video.js  (6ms)  (pid 29343)
+Compiled application.js  (28ms)  (pid 29343)
+Completed 200 OK in 188ms (Views: 187.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-23 02:07:24 +0700
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-23 02:07:24 +0700
+Served asset /application.css - 304 Not Modified (30ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-23 02:07:24 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/local-video.js?body=1" for 127.0.0.1 at 2013-07-23 02:07:24 +0700
+Served asset /local-video.js - 200 OK (13ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-07-23 02:07:24 +0700
+Served asset /welcome.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-23 02:07:24 +0700
+Served asset /application.js - 304 Not Modified (161ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-23 02:08:07 +0700
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Compiled local-video.js  (1ms)  (pid 29343)
+Compiled application.js  (24ms)  (pid 29343)
+Completed 200 OK in 149ms (Views: 148.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-23 02:08:09 +0700
+Served asset /jquery.js - 304 Not Modified (36ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-23 02:08:09 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-23 02:08:09 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/local-video.js?body=1" for 127.0.0.1 at 2013-07-23 02:08:09 +0700
+Served asset /local-video.js - 200 OK (19ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-23 02:08:09 +0700
+Served asset /application.js - 304 Not Modified (216ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-07-23 02:08:09 +0700
+Served asset /welcome.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-23 02:08:50 +0700
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 73ms (Views: 72.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-23 02:08:51 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-23 02:08:51 +0700
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-23 02:08:51 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/local-video.js?body=1" for 127.0.0.1 at 2013-07-23 02:08:51 +0700
+Served asset /local-video.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-07-23 02:08:51 +0700
+Served asset /welcome.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-23 02:08:51 +0700
+Served asset /application.js - 304 Not Modified (9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-23 02:09:30 +0700
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Compiled local-video.js  (2ms)  (pid 29343)
+Compiled application.js  (17ms)  (pid 29343)
+Completed 200 OK in 231ms (Views: 230.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-23 02:09:32 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-23 02:09:32 +0700
+Served asset /jquery.js - 304 Not Modified (55ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-23 02:09:32 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-07-23 02:09:32 +0700
+Served asset /welcome.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/local-video.js?body=1" for 127.0.0.1 at 2013-07-23 02:09:32 +0700
+Served asset /local-video.js - 200 OK (18ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-23 02:09:32 +0700
+Served asset /application.js - 304 Not Modified (85ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-23 02:10:14 +0700
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.2ms)
+Compiled local-video.js  (2ms)  (pid 29343)
+Compiled application.js  (23ms)  (pid 29343)
+Completed 200 OK in 273ms (Views: 271.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-23 02:10:16 +0700
+Served asset /application.css - 304 Not Modified (16ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-23 02:10:16 +0700
+Served asset /jquery.js - 304 Not Modified (49ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-23 02:10:16 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-07-23 02:10:16 +0700
+Served asset /welcome.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/local-video.js?body=1" for 127.0.0.1 at 2013-07-23 02:10:16 +0700
+Served asset /local-video.js - 200 OK (17ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-23 02:10:17 +0700
+Served asset /application.js - 304 Not Modified (73ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-23 02:10:31 +0700
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 46ms (Views: 44.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-23 02:10:33 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-23 02:10:33 +0700
+Served asset /jquery.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-07-23 02:10:33 +0700
+Served asset /welcome.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/local-video.js?body=1" for 127.0.0.1 at 2013-07-23 02:10:33 +0700
+Served asset /local-video.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-23 02:10:33 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-23 02:10:33 +0700
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-23 02:11:07 +0700
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Compiled local-video.js  (1ms)  (pid 29343)
+Compiled application.js  (22ms)  (pid 29343)
+Completed 200 OK in 219ms (Views: 218.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-23 02:11:09 +0700
+Served asset /jquery.js - 304 Not Modified (21ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-23 02:11:09 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-23 02:11:09 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/local-video.js?body=1" for 127.0.0.1 at 2013-07-23 02:11:09 +0700
+Served asset /local-video.js - 200 OK (11ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-07-23 02:11:10 +0700
+Served asset /welcome.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-23 02:11:10 +0700
+Served asset /application.js - 304 Not Modified (53ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-23 02:11:35 +0700
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Compiled local-video.js  (1ms)  (pid 29343)
+Compiled application.js  (24ms)  (pid 29343)
+Completed 200 OK in 237ms (Views: 236.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-23 02:11:37 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-23 02:11:37 +0700
+Served asset /jquery.js - 304 Not Modified (37ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-07-23 02:11:37 +0700
+Served asset /welcome.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/local-video.js?body=1" for 127.0.0.1 at 2013-07-23 02:11:37 +0700
+Served asset /local-video.js - 200 OK (15ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-23 02:11:37 +0700
+Served asset /application.js - 304 Not Modified (49ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-23 02:11:38 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-23 02:11:50 +0700
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 87ms (Views: 86.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-23 02:11:52 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-23 02:11:52 +0700
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-23 02:11:52 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/local-video.js?body=1" for 127.0.0.1 at 2013-07-23 02:11:52 +0700
+Served asset /local-video.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-07-23 02:11:52 +0700
+Served asset /welcome.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-23 02:11:52 +0700
+Served asset /application.js - 304 Not Modified (19ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-23 02:13:04 +0700
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.9ms)
+Compiled local-video.js  (2ms)  (pid 29343)
+Compiled application.js  (25ms)  (pid 29343)
+Completed 200 OK in 255ms (Views: 253.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-23 02:13:06 +0700
+Served asset /application.css - 304 Not Modified (27ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-23 02:13:06 +0700
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-23 02:13:06 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/local-video.js?body=1" for 127.0.0.1 at 2013-07-23 02:13:06 +0700
+Served asset /local-video.js - 200 OK (16ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-23 02:13:06 +0700
+Served asset /application.js - 304 Not Modified (69ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-07-23 02:13:06 +0700
+Served asset /welcome.js - 304 Not Modified (0ms)

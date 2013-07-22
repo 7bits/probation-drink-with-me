@@ -5,10 +5,17 @@ $(document).ready(function(){
 	//window.URL = window.URL || window.webkitURL;
 	navigator.getUserMedia({video: true}, 
 		function(stream) {
-			alert('a');
+			console.log('connect to cam');
 			video.src = window.URL.createObjectURL(stream);
+			/*var width=$('#content_wrapper').width();
+			var height=($('#content_wrapper').height()-$('#video_me').height())/4;
+			console.log('height='+height);
+			$('#video_me').css({
+				width:width,
+				marginTop:height+"px"
+			})*/
 		},
 		function(){
 			console.log("Нет камеры");
-		});
+		})
 })
