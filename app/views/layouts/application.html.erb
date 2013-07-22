@@ -1,14 +1,36 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en-US">
 <head>
-  <title>Drink</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>DrinkTest</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
+<!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
 </head>
 <body>
+<header id='header_site'>
+	<section>
+		<h1>Logo</h1>
+	</section>
+	<section>
+		<h1>Name(Drink with me)</h1>
+	</section>
+</header>
 
 <%= yield %>
 
+<aside>
+	<section id='chat_box'>
+		<ul>
+			<li class='my_message'>Привет!!</li>
+			<li class='his_message'>Привет!!!</li>
+			<li class='my_message'>Как зовут?</li>
+			<li class='his_message'>Геной зовут, а тебя </li>
+		</ul>
+	</section>
+</aside>
 </body>
-</html>
+</html
