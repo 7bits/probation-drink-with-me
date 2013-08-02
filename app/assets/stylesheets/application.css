@@ -1,42 +1,63 @@
-html,body{
-	margin:0;
-	padding: 0;
-	width: 100%;
-	height: 100%;
-}
-#header_site{
-	height: 15%;
-}
-#content {
-    height: 85%;
+
+ body {
+      background: #200000; 
     width: 100%;
+    /*overflow: inherit;
+    background-image: url("image/brick.gif");
+    background-repeat: no-repeat;*/
+    position: relative;
+     }
+
+    .header{
+
+        position: absolute;left: 0px;right: 0px;top: 0px;bottom: 0px;
+        /*width: 100%;
+        height: 100%;*/
+        /*background-color:pink*/    
 }
-#header_site > section {
-    display: inline-block;
-    width: 40%;
-    height: 15%;
+.forest {   
+        position: absolute;top: 0px;left: 0px;  
+
 }
-#content > section {
-    display: inline-block;
+
+.chat {
+        position:absolute; top: 100px;right: 20px; bottom: 10px;
+        width: 325px;
+        background-color: rgba(30, 40, 60, 0.3);
+        height: 42%;
 }
-#header_site, #content {
-    border: 1px solid;
+.rectagle{
+        position:absolute; bottom: 90px;right: 20px;
+        
 }
-#content_wrapper{
-	width:69%;
-	height: 100%;
-	min-height: 100%;
+.baton{
+    position:absolute; bottom: 20px;right: 120px;
 }
-#content_box{
-	text-align: center;
+.bat{
+    position:absolute; bottom: 20px;right: 50px;
 }
-#chat_box {
-    width: 30%;
-    border: 1px solid;
-    min-height: 100%;
-    height: 100%;
-    vertical-align: top;
+
+
+    .diagonal {
+
+        position: absolute; top:27px;left:0px;bottom:0px;
+    }
+
+.forest p {
+    position: absolute; top: 20px; left: 160px;
+    font:30pt electronika;
+    color: blue;
+    width: 300px;
+    height: 120px;
+
+    -moz-transform: rotate(-15deg);
+    -webkit-transform: rotate(-15deg);
+    -o-transform: rotate(-15deg);
+    -ms-transform: rotate(-15deg); /* для IE9 */
+    transform: rotate(-15deg); /* на будущее */
 }
-#video_me{
-	height: 100%;
-}
+
+
+.video {
+        position:absolute; top: 380px;left: 70px;right: 350px;
+    }
