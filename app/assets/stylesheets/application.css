@@ -1,50 +1,67 @@
 
- body {
-      background: #200000; 
+body {
+    background: #200000; 
     width: 100%;
     /*overflow: inherit;
     background-image: url("image/brick.gif");
     background-repeat: no-repeat;*/
     position: relative;
-     }
+}
 
-    .header{
-
-        position: absolute;left: 0px;right: 0px;top: 0px;bottom: 0px;
-        /*width: 100%;
-        height: 100%;*/
-        /*background-color:pink*/    
+.header{
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    /*width: 100%;
+    height: 100%;*/
+    /*background-color:pink*/    
 }
 .forest {   
-        position: absolute;top: 0px;left: 0px;  
-
+    position: absolute;
+    top: 0px;
+    left: 0px;  
+    z-index: 10;
 }
 
 .chat {
-        position:absolute; top: 100px;right: 20px; bottom: 10px;
-        width: 325px;
-        background-color: rgba(30, 40, 60, 0.3);
-        height: 42%;
+    position:absolute; 
+    top: 100px;
+    right: 20px; 
+    bottom: 10px;
+    width: 325px;
+    background-color: rgba(30, 40, 60, 0.3);
+    height: 42%;
 }
 .rectagle{
-        position:absolute; bottom: 90px;right: 20px;
-        
+    position:absolute; 
+    bottom: 90px;
+    right: 20px;
 }
 .baton{
-    position:absolute; bottom: 20px;right: 120px;
+    position:absolute; 
+    bottom: 20px;
+    right: 120px;
 }
 .bat{
-    position:absolute; bottom: 20px;right: 50px;
+    position:absolute; 
+    bottom: 20px;
+    right: 50px;
 }
 
 
-    .diagonal {
-
-        position: absolute; top:27px;left:0px;bottom:0px;
-    }
+.diagonal {
+    position: absolute; 
+    top:27px;
+    left:0px;
+    bottom:0px;
+}
 
 .forest p {
-    position: absolute; top: 20px; left: 160px;
+    position: absolute; 
+    top: 20px; 
+    left: 160px;
     font:30pt electronika;
     color: blue;
     width: 300px;
@@ -59,5 +76,12 @@
 
 
 .video {
-        position:absolute; top: 380px;left: 70px;right: 350px;
-    }
+    position: absolute;
+    top: 150px;
+    left: 70px;
+    right: 350px;
+}
+#content_box{
+    margin: 0 auto;
+    width: 50%;
+}

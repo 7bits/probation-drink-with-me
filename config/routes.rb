@@ -1,4 +1,10 @@
 Drink::Application.routes.draw do
+  resources :chats
+
+
+  resources :users
+
+
   get "welcome/index"
 
   # The priority is based upon order of creation:
