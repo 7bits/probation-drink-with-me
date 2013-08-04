@@ -1,12 +1,16 @@
 Drink::Application.routes.draw do
   resources :chats
+ # TODO
+ # ДОбавить fromat на роуты для chats#save_message и chats #get_message
 
+  resources :users 
 
-  resources :users
+  root :to => 'users#new'
 
+  get '/mess', to: 'chats#messenger'
 
-  get "welcome/index"
-
+  post '/get_message', to: 'chats#get_message' 
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -56,7 +60,7 @@ Drink::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-   root :to => 'welcome#index'
+   
 
   # See how all your routes lay out with "rake routes"
 

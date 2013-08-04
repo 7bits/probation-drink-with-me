@@ -81,4 +81,31 @@ class ChatsController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+  # поидее методы выше не нужны 
+  # контроллер работает только на ajax запросы
+
+  #GET /chat
+  def messenger
+    @chat = Chat.new
+  end
+
+  # POST /get_messsage
+  def get_message
+    # после прочтения удалить
+  end
+
+  # POST /save_message
+  def save_message
+    @chat=Chat.new(:from => session[:session_id], :message => params[:message], :where => 'all');
+    respond_to do |f|
+      if @chat.save
+        f.json {render json: @chat, message: 'yes' }
+        f.js {}
+      else
+        f.json {render json: @chat.errors, message: 'no' }
+        f.js {}
+      end
+    end
+  end
 end
