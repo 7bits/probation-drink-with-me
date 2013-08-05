@@ -82,17 +82,23 @@ class ChatsController < ApplicationController
     end
   end
 
-  # поидее методы выше не нужны 
+  # по идее методы выше не нужны 
   # контроллер работает только на ajax запросы
 
   #GET /chat
   def messenger
-    @chat = Chat.new
+      @chat = Chat.new
+      @name = User.where('session = ? ',session[:session_id]).first
+      render 'messenger' 
   end
 
   # POST /get_messsage
   def get_message
-    # после прочтения удалить
+
+    @chat = Chat.where('where == ?', params['where']).last
+    respond_to do |f|
+        f.json {render json: @chat }
+    end
   end
 
   # POST /save_message
@@ -100,12 +106,11 @@ class ChatsController < ApplicationController
     @chat=Chat.new(:from => session[:session_id], :message => params[:message], :where => 'all');
     respond_to do |f|
       if @chat.save
-        f.json {render json: @chat, message: 'yes' }
-        f.js {}
+        f.json {render json: @chat }
       else
-        f.json {render json: @chat.errors, message: 'no' }
-        f.js {}
+        f.json {render json: @chat.errors }
       end
     end
   end
+
 end

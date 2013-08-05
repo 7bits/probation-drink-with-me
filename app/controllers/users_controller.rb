@@ -26,10 +26,14 @@ class UsersController < ApplicationController
   # GET /users/new.json
   def new
     @user = User.new
-
     respond_to do |format|
-      format.html # new.html.erb
-      format.json { render json: @user }
+      unless user_create?
+          format.html # new.html.erb
+          format.json { render json: @user }
+      else
+        format.html { redirect_to '/mess'}
+        format.json { render json: 'messages/index', status: :created, location: 'chats/index' }
+      end
     end
   end
 
@@ -41,8 +45,7 @@ class UsersController < ApplicationController
   # POST /users
   # POST /users.json
   def create
-    #@users_create = User.where('session = ?', session[:session_id])
-    #if @users_create == []
+    unless user_create?
       @user= User.new(:session => session[:session_id], :name => params[:user][:name] )
         respond_to do |format|
           if @user.save
@@ -53,10 +56,10 @@ class UsersController < ApplicationController
             format.json { render json: @user.errors, status: :unprocessable_entity }
           end
         end
-    #else 
-     # @user= User.new
-      #render action: "new"
-    #end
+    else 
+      @user= User.new
+      render action: "new"
+    end
   end
 
   # PUT /users/1
@@ -86,6 +89,5 @@ class UsersController < ApplicationController
       format.json { head :no_content }
     end
   end
-
 
 end
