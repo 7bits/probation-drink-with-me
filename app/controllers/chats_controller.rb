@@ -94,16 +94,23 @@ class ChatsController < ApplicationController
 
   # POST /get_messsage
   def get_message
-
-    @chat = Chat.where('`where` = ?', params['where']).last
+    # здесь подготовить массив и только потом отправить иначе получится каша
+    @messages = Chat.where('`where` = ?': params['where'], 'read = ' :false)
     respond_to do |f|
-        f.json {render json: @chat }
+        f.json {render json: @messages }
     end
+  end
+
+  def read_message
+    @messages =  @messages = Chat.where('`where` = ?': params['where'], 'read = ' :false)
+    # Пробежаться циклом по записям изменяя значения поля read на true
+    # user = User.find_by_name('David') user.name = 'Dave' user.save
+    # user = User.find_by_name('David') user.update(name: 'Dave')
   end
 
   # POST /save_message
   def save_message
-    @chat=Chat.new(:from => session[:session_id], :message => params[:message], :where => 'all');
+    @chat=Chat.new(:from => session[:session_id], :message => params[:message], :where => 'all', :read => false);
     respond_to do |f|
       if @chat.save
         f.json {render json: @chat }

@@ -29438,3 +29438,143 @@ Processing by ChatsController#get_message as JSON
   Parameters: {"where"=>"all"}
   [1m[35mChat Load (0.6ms)[0m  SELECT "chats".* FROM "chats" WHERE (`where` = 'all') ORDER BY "chats"."id" DESC LIMIT 1
 Completed 200 OK in 6ms (Views: 1.7ms | ActiveRecord: 0.6ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2013-08-05 21:21:37 +0700
+Processing by UsersController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE (session = NULL)[0m
+  Rendered users/_form.html.erb (19.2ms)
+  Rendered users/new.html.erb within layouts/default (22.0ms)
+Compiled chat.js  (0ms)  (pid 3748)
+Compiled application.js  (2ms)  (pid 3748)
+Completed 200 OK in 315ms (Views: 158.4ms | ActiveRecord: 24.0ms)
+
+
+Started GET "/assets/chat.js?body=1" for 127.0.0.1 at 2013-08-05 21:21:38 +0700
+Served asset /chat.js - 200 OK (5ms)
+
+
+Started GET "/assets/local-video.js?body=1" for 127.0.0.1 at 2013-08-05 21:21:38 +0700
+Served asset /local-video.js - 200 OK (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-05 21:21:38 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-08-05 21:21:38 +0700
+Served asset /users.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-05 21:21:38 +0700
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/chats.js?body=1" for 127.0.0.1 at 2013-08-05 21:21:38 +0700
+Served asset /chats.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-05 21:21:38 +0700
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started POST "/get_message" for 127.0.0.1 at 2013-08-05 21:21:39 +0700
+Processing by ChatsController#get_message as JSON
+  Parameters: {"where"=>"all"}
+  [1m[35mChat Load (0.1ms)[0m  SELECT "chats".* FROM "chats" WHERE (`where` = 'all') ORDER BY "chats"."id" DESC LIMIT 1
+Completed 200 OK in 100ms (Views: 93.7ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/get_message" for 127.0.0.1 at 2013-08-05 21:21:40 +0700
+Processing by ChatsController#get_message as JSON
+  Parameters: {"where"=>"all"}
+  [1m[36mChat Load (0.2ms)[0m  [1mSELECT "chats".* FROM "chats" WHERE (`where` = 'all') ORDER BY "chats"."id" DESC LIMIT 1[0m
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2013-08-05 21:21:40 +0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tC3sAaAgpAwt1K7QJ0ZZia35+w4Xlif2mMm/JOqAZio=", "user"=>{"name"=>"34125412345"}, "commit"=>"Create User"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE (session = '3b6e924cccfdcfba05b532615a9abc33')
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("created_at", "name", "session", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Mon, 05 Aug 2013 14:21:40 UTC +00:00], ["name", "34125412345"], ["session", "3b6e924cccfdcfba05b532615a9abc33"], ["updated_at", Mon, 05 Aug 2013 14:21:40 UTC +00:00]]
+  [1m[36m (271.2ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/mess
+Completed 302 Found in 275ms (ActiveRecord: 271.7ms)
+
+
+Started GET "/mess" for 127.0.0.1 at 2013-08-05 21:21:41 +0700
+Processing by ChatsController#messenger as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE (session = '3b6e924cccfdcfba05b532615a9abc33' ) LIMIT 1
+  Rendered chats/_form.html.erb (5.0ms)
+  Rendered chats/messenger.html.erb within layouts/default (6.4ms)
+Completed 200 OK in 18ms (Views: 16.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-05 21:21:41 +0700
+Served asset /jquery.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-05 21:21:41 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/chats.js?body=1" for 127.0.0.1 at 2013-08-05 21:21:41 +0700
+Served asset /chats.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-08-05 21:21:41 +0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-05 21:21:41 +0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/get_message" for 127.0.0.1 at 2013-08-05 21:21:42 +0700
+Processing by ChatsController#get_message as JSON
+  Parameters: {"where"=>"all"}
+  [1m[36mChat Load (0.2ms)[0m  [1mSELECT "chats".* FROM "chats" WHERE (`where` = 'all') ORDER BY "chats"."id" DESC LIMIT 1[0m
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/get_message" for 127.0.0.1 at 2013-08-05 21:21:43 +0700
+Processing by ChatsController#get_message as JSON
+  Parameters: {"where"=>"all"}
+  [1m[35mChat Load (0.2ms)[0m  SELECT "chats".* FROM "chats" WHERE (`where` = 'all') ORDER BY "chats"."id" DESC LIMIT 1
+Completed 200 OK in 2ms (Views: 0.6ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/get_message" for 127.0.0.1 at 2013-08-05 21:21:44 +0700
+Processing by ChatsController#get_message as JSON
+  Parameters: {"where"=>"all"}
+  [1m[36mChat Load (0.2ms)[0m  [1mSELECT "chats".* FROM "chats" WHERE (`where` = 'all') ORDER BY "chats"."id" DESC LIMIT 1[0m
+Completed 200 OK in 2ms (Views: 0.6ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/get_message" for 127.0.0.1 at 2013-08-05 21:21:45 +0700
+Processing by ChatsController#get_message as JSON
+  Parameters: {"where"=>"all"}
+  [1m[35mChat Load (0.2ms)[0m  SELECT "chats".* FROM "chats" WHERE (`where` = 'all') ORDER BY "chats"."id" DESC LIMIT 1
+Completed 200 OK in 2ms (Views: 0.6ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/get_message" for 127.0.0.1 at 2013-08-05 21:21:46 +0700
+Processing by ChatsController#get_message as JSON
+  Parameters: {"where"=>"all"}
+  [1m[36mChat Load (0.2ms)[0m  [1mSELECT "chats".* FROM "chats" WHERE (`where` = 'all') ORDER BY "chats"."id" DESC LIMIT 1[0m
+Completed 200 OK in 2ms (Views: 0.6ms | ActiveRecord: 0.2ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateUsers (20130802072242)
+Migrating to CreateChats (20130802072414)
+Migrating to AddReadColumnsToChats (20130805165140)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "chats" ADD "read" boolean
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130805165140')[0m
+  [1m[35m (152.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
