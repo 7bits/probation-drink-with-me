@@ -95,7 +95,7 @@ class ChatsController < ApplicationController
   # POST /get_messsage
   def get_message
 
-    @chat = Chat.where('where == ?', params['where']).last
+    @chat = Chat.where('`where` = ?', params['where']).last
     respond_to do |f|
         f.json {render json: @chat }
     end

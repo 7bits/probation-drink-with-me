@@ -14,28 +14,31 @@ $(document).ready(function(){
 				})
 				console.log('Отправили, чистим поле для чтения')
 				$('#chat_message').val('');
-				
-				alert('Сейчас произошел ajax запрос на сервер для получения сообщения');
 			}
 		)
 		$('#btn-get').click(function(){
-			$.ajax({
-					url:'/get_message',
-					type:'POST',
-					dataType:'json',
-					data:{
-						where: 'all'
-					}
-				})
+			clearInterval(id);
 		})
+
+		id=setInterval(function(){
+				server_side();
+			},1000)
+
 		function server_side(){
 			$.ajax({
-					url:'/save_message',
-					type:'POST',
-					dataType:JSON,
-					data:{
+				url:'/get_message',
+				type:'POST',
+				dataType:'json',
+				data:{
+					where: 'all'
+				},
+				success: function(msg){
+				    $('.chat').append("<li class='my-message'><span class='where'>"+msg.from+"</span><span>"+msg.message+"</span></li>");
+				},
+				error: function(){
+					alert("Печаль")
+				}
 
-					}
-				})
+			})
 		}
 	})
