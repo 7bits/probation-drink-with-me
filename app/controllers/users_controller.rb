@@ -42,12 +42,11 @@ class UsersController < ApplicationController
   # POST /users.json
   def create
     #@users_create = User.where('session = ?', session[:session_id])
-    #sfsdg
     #if @users_create == []
       @user= User.new(:session => session[:session_id], :name => params[:user][:name] )
         respond_to do |format|
           if @user.save
-              format.html { redirect_to '/mess', notice: "Привет" + params[:user][:name] }
+              format.html { redirect_to '/mess', notice: "Привет " + params[:user][:name] }
               format.json { render json: 'messages/index', status: :created, location: 'chats/index' } 
           else
             format.html { render action: "new" }

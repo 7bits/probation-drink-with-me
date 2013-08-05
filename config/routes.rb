@@ -1,15 +1,17 @@
 Drink::Application.routes.draw do
   resources :chats
- # TODO
- # ДОбавить fromat на роуты для chats#save_message и chats #get_message
 
   resources :users 
 
   root :to => 'users#new'
-
+  # страница с видео
+  get '/video', to: 'welcome#index'
+  # Страница с чатом
   get '/mess', to: 'chats#messenger'
-
-  post '/get_message', to: 'chats#get_message' 
+  # получение сообщений
+  post '/get_message(.:format)', to: 'chats#get_message'
+  # сохранение сообщений
+  post '/save_message(.:format)', to:'chats#save_message'
   
   # The priority is based upon order of creation:
   # first created -> highest priority.
