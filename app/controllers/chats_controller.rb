@@ -88,14 +88,22 @@ class ChatsController < ApplicationController
   #GET /chat
   def messenger
       @chat = Chat.new
-      @name = User.where('session = ? ',session[:session_id]).first
-      render 'messenger' 
+      if user_create?
+        @name = User.select('name').where('session = ? ',session[:session_id]).last
+        render 'messenger'  
+      else
+        redirect_to root_path
+      end
+       
   end
 
   # POST /get_messsage
   def get_message
     # здесь подготовить массив и только потом отправить иначе получится каша
-    @messages =  @messages = Chat.where('`where` = ?  AND read = ?', params[:where], false)
+    @messages = Chat.select('id, `from` , message').where('`where` = ?  AND read = ? AND `from` != ?', 'all', false, session[:session_id]).each do |messages|
+      @username = User.select('name').where('session = ?', messages.from).last
+      messages.from = @username.name 
+    end
     respond_to do |f|
         f.json {render json: @messages }
     end

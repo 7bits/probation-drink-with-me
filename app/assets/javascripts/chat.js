@@ -1,7 +1,7 @@
 $(document).ready(function(){
 		$('#btn-send').click(
 			function(){
-				$('.chat').append("<li class='my-message'><span class='where'>кому-то</span><span>"+$('#chat_message').val()+"</span></li>");
+				$('.chat').append("<li class='my-message'><span class='where'>кому-то : </span><span>"+$('#chat_message').val()+"</span></li>");
 				console.log('Отправка запроса')
 				$.ajax({
 					url:'/save_message',
@@ -39,7 +39,7 @@ $(document).ready(function(){
 					var message = JSON.parse(JSON.stringify( msg ))
 					for (var i = 0 ; i < message.length ; i++){
 
-						$('.chat').append("<li class='my-message'><span class='where'>" + message[i].from + "</span><span>" + message[i].message + "</span></li>");
+						$('.chat').append("<li class='my-message'><span class='where'>" + message[i].from + ":  </span><span>" + message[i].message + "</span></li>");
 						$.ajax({
 							url: '/read_message',
 							type: 'POST',
