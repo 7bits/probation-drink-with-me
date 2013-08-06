@@ -108,7 +108,7 @@ class ChatsController < ApplicationController
         f.json {render json: @messages }
     end
   end
-
+  # 'Чтение' сообщения, чтобы не загружать несколько сообщений несколько раз
   def read_message
 
     @messages = Chat.find(params[:id])

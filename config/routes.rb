@@ -8,7 +8,9 @@ Drink::Application.routes.draw do
   get '/video', to: 'welcome#index'
   # Страница с чатом
   get '/mess', to: 'chats#messenger'
-  # получение сообщений
+  # Закрытие сессии
+  get '/exit', to: 'users#exit'
+  # получение сообщени
   post '/get_message(.:format)', to: 'chats#get_message'
 
   post '/read_message(.:format)', to: 'chats#read_message'

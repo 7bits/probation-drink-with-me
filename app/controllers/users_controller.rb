@@ -91,4 +91,10 @@ class UsersController < ApplicationController
     end
   end
 
+  def exit
+    @user= User.where('session = ? ', session[:session_id])
+    @user.destroy_all
+
+    redirect_to root_path
+  end
 end
