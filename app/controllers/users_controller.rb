@@ -45,6 +45,7 @@ class UsersController < ApplicationController
   # POST /users
   # POST /users.json
   def create
+    
     unless user_create?
       @user= User.new(:session => session[:session_id], :name => params[:user][:name] )
         respond_to do |format|

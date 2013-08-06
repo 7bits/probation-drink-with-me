@@ -17,14 +17,17 @@ $(document).ready(function(){
 			}
 		)
 		$('#btn-get').click(function(){
+			server();
+		})
+		$('#btn-close').click(function(){
 			clearInterval(id);
 		})
 
 		id=setInterval(function(){
-				server_side();
+				server();
 			},1000)
 
-		function server_side(){
+		function server(){
 			$.ajax({
 				url:'/get_message',
 				type:'POST',
@@ -33,7 +36,25 @@ $(document).ready(function(){
 					where: 'all'
 				},
 				success: function(msg){
-				    $('.chat').append("<li class='my-message'><span class='where'>"+msg.from+"</span><span>"+msg.message+"</span></li>");
+					var message = JSON.parse(JSON.stringify( msg ))
+					for (var i = 0 ; i < message.length ; i++){
+
+						$('.chat').append("<li class='my-message'><span class='where'>" + message[i].from + "</span><span>" + message[i].message + "</span></li>");
+						$.ajax({
+							url: '/read_message',
+							type: 'POST',
+							dataType: 'json',
+							data:{
+								id : message[i].id
+							},
+							success: function(){
+								console.log('Прочитали')
+							},
+							error: function(){
+								console.log('ошибка ')
+							}
+						})
+					}
 				},
 				error: function(){
 					alert("Печаль")

@@ -10,6 +10,8 @@ Drink::Application.routes.draw do
   get '/mess', to: 'chats#messenger'
   # получение сообщений
   post '/get_message(.:format)', to: 'chats#get_message'
+
+  post '/read_message(.:format)', to: 'chats#read_message'
   # сохранение сообщений
   post '/save_message(.:format)', to:'chats#save_message'
   

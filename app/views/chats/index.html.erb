@@ -5,6 +5,7 @@
     <th>From</th>
     <th>Where</th>
     <th>Message</th>
+    <th>Read</th>
     <th></th>
     <th></th>
     <th></th>
@@ -15,6 +16,7 @@
     <td><%= chat.from %></td>
     <td><%= chat.where %></td>
     <td><%= chat.message %></td>
+    <td><%= chat.read %></td>
     <td><%= link_to 'Show', chat %></td>
     <td><%= link_to 'Edit', edit_chat_path(chat) %></td>
     <td><%= link_to 'Destroy', chat, method: :delete, data: { confirm: 'Are you sure?' } %></td>
