@@ -1,7 +1,8 @@
 $(document).ready(function(){
 		$('#btn-send').click(
 			function(){
-				$('.chat').append("<li class='my-message'><span class='where'>кому-то : </span><span>"+$('#chat_message').val()+"</span></li>");
+				if(validation()){
+					$('.chat').append("<li class='my-message'><span class='where'>кому-то : </span><span>"+$('#chat_message').val()+"</span></li>");
 				console.log('Отправка запроса')
 				$.ajax({
 					url:'/save_message',
@@ -14,6 +15,7 @@ $(document).ready(function(){
 				})
 				console.log('Отправили, чистим поле для чтения')
 				$('#chat_message').val('');
+				}	
 			}
 		)
 		$('#btn-get').click(function(){
@@ -26,7 +28,11 @@ $(document).ready(function(){
 		id=setInterval(function(){
 				server();
 			},1000)
-
+		$("#chat_message").keyup(function(e){
+			 if (e.ctrlKey && e.keyCode == 13) {
+		     	$('#btn-send').click();
+		    }
+		})
 		function server(){
 			$.ajax({
 				url:'/get_message',
@@ -61,5 +67,10 @@ $(document).ready(function(){
 				}
 
 			})
+		}
+		function validation(){
+			if($('#chat_message').val()==""){
+				return false
+			} else return true
 		}
 	})

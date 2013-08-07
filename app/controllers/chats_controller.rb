@@ -1,5 +1,5 @@
 class ChatsController < ApplicationController
-  layout 'default'
+  layout 'chat'
   # GET /chats
   # GET /chats.json
   def index
