@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130805165140) do
+ActiveRecord::Schema.define(:version => 20130807063740) do
 
   create_table "chats", :force => true do |t|
     t.text     "from"
@@ -25,8 +25,9 @@ ActiveRecord::Schema.define(:version => 20130805165140) do
   create_table "users", :force => true do |t|
     t.text     "session"
     t.text     "name"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at",                    :null => false
+    t.datetime "updated_at",                    :null => false
+    t.boolean  "search",     :default => false
   end
 
 end

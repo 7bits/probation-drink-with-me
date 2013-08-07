@@ -6,6 +6,10 @@ Drink::Application.routes.draw do
   root :to => 'users#new'
   # страница с видео
   get '/video', to: 'welcome#index'
+
+  post '/insall_status', to: 'random#status_search'
+  #рандомный поиск
+  post '/get_dude', to: 'random#search'
   # Страница с чатом
   get '/mess', to: 'chats#messenger'
   # Закрытие сессии
