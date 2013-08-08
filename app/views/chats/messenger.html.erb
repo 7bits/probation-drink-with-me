@@ -1,8 +1,42 @@
-<h1>Привет <%= @name.name %></h1>
-<h1><a href='/exit'>Выйти</a></h1>
-<input type='button' name='btn-close' class='btn-close' id='btn-close' value='закрыть соединение'>
-<ul class='chat' >
+<!DOCTYPE html>
+<html>
+<head>
 
-</ul>
+	<meta charset="utf-8">
+
+	<link rel="stylesheet" href="my.css" type="text/css" media="screen">
+	
+	<title> Drink with me </title>
+
+</head>
+
+<body>
+		<img src="assets/brick.gif" width=100% alt="a" />
+
+<div class="content"> 
+	
+	<div class="forest"> 
+
+		<img src="assets/forest.png" alt="b" />
+		</div>
+
+<div class="first"> 
+
+	<img src="assets/first.png"  alt="d" />
+
+<p><%= @name.name %> at the bar</p>
+<h1><a href='/exit'>Выйти</a></h1>
+<!--input type='button' name='btn-close' class='btn-close' id='btn-close' value='закрыть соединение'
+
+<ul class='chat' >
+</ul>-->
 
 <%= render 'form' %>
+
+</div>
+
+</div>
+
+</body>
+
+</html>
