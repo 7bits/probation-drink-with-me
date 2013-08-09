@@ -3,7 +3,7 @@ $(document).ready(function(){
 	var sessionDude;
 	//ОТправка сообщения по нажатию Ctrl+Enter
 	$("#chat_message").keyup(function(e){
-		 if (e.ctrlKey && e.keyCode == 13) {
+		if (e.ctrlKey && e.keyCode == 13) {
 	     	$('#btn-send').click();
 	    }
 	})
@@ -23,24 +23,49 @@ $(document).ready(function(){
 			$('#chat_message').val('');
 		}	
 	})
+	
 	// поиск собеседника
 	$('#btn-search').click(function(){
 		stopInterval(idInterval);
+
 		$.ajax({
 				url:'/insall_status',
 				type:'POST',
 				success:function(){
-					$.ajax({
-						url: '/get_dude',
-						type:'POST',
-						success:function(data){
-							alert('Собеседник найден');
-							startInterval(sessionDude)
-						},
-						error: function(){
-							alert('Ошиба при поиске')
-						}
-					})
+
+					setTimeout(function(){
+						$.ajax({
+							url: '/get_dude',
+							type:'POST',
+							statusCode:{
+									200: function(responceData) {
+										alert('Собеседник найден');
+										sessionDude = responceData.session
+										startInterval()
+										
+									},
+									201: function(responceData) {
+										alert("Собеседник найден и имя его " + responceData.message)
+										sessionDude = responceData.from
+										$('.chat')
+											.append("<li class='system-respond'><span> Установлено соединение с" + responceData.message + "</span></li>");
+										startInterval()
+										
+									},
+									404: function(responceData) {
+										alert("Нет активных пользоавтелей");
+										
+									},
+									406: function(responceData) {
+										alert("Произошла ошибка, попробуйте найти собеседника позже");
+										
+									},
+									500: function(responceData) {
+										alert("Вот хз что произошло, зайди в фаирбаг и почини, че как лох сидишь")
+									}
+							}
+						})
+					},1500)
 				},
 				error:function(){
 					alert("Что-то пошло не так");
@@ -69,18 +94,13 @@ $(document).ready(function(){
 			type:'POST',
 			dataType:'json',
 			data:{
-				where: 'all'
+				where: sessionDude
 			},
 			success: function(msg){
 				var message = JSON.parse(JSON.stringify( msg ))
 				for (var i = 0 ; i < message.length ; i++){
-					if (test){
-						sessionDude = message[i].from
-						$('.chat').append("<li class='system-respond'><span> Установлено соединение с" + message[i].message + "</span></li>");
-					}else{
-						$('.chat').append("<li class='my-message'><span class='where'>" + message[i].from + 
-							":  </span><span>" + message[i].message + "</span></li>");
-					}
+					$('.chat').append("<li class='dude-message'><span class='where'>" + message[i].from + ":  </span><span>" + message[i].message + "</span></li>");
+					
 					$.ajax({
 						url: '/read_message',
 						type: 'POST',
@@ -107,5 +127,8 @@ $(document).ready(function(){
 		if($('#chat_message').val()==""){
 			return false
 		} else return true
+	}
+	function get_test_message(){
+		alert("Тестовое сообщение");
 	}
 })

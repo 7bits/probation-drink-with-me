@@ -100,7 +100,7 @@ class ChatsController < ApplicationController
   # POST /get_messsage
   def get_message
     # здесь подготовить массив и только потом отправить иначе получится каша
-    @messages = Chat.select('id, `from` , message').where('`where` = ?  AND read = ? AND `from` != ?', params[:where], false, session[:session_id]).each do |messages|
+    @messages = Chat.select('id, `from` , message').where('`where` = ?  AND read = ? AND `from` != ?', session[:session_id], false, session[:session_id]).each do |messages|
       @username = User.select('name').where('session = ?', messages.from).last
       messages.from = @username.name 
     end

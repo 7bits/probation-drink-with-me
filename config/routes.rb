@@ -7,11 +7,11 @@ Drink::Application.routes.draw do
   # страница с видео
   get '/video', to: 'welcome#index'
 
-  post '/insall_status', to: 'random#status_search'
+  post '/insall_status(.:format)', to: 'random#status_search'
   #рандомный поиск
-  post '/get_dude', to: 'random#search'
+  post '/get_dude(.:format)', to: 'random#search'
   # Страница с чатом
-  get '/mess', to: 'chats#messenger'
+  get '/mess(.:format)', to: 'chats#messenger'
   # Закрытие сессии
   get '/exit', to: 'users#exit'
   # получение сообщени
