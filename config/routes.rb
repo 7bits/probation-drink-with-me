@@ -9,17 +9,19 @@ Drink::Application.routes.draw do
 
   post '/insall_status(.:format)', to: 'random#status_search'
   #рандомный поиск
-  post '/get_dude(.:format)', to: 'random#search'
+  post '/find_interlocutor(.:format)', to: 'random#search'
   # Страница с чатом
-  get '/mess(.:format)', to: 'chats#messenger'
+  get '/bar(.:format)', to: 'chats#messenger'
+
   # Закрытие сессии
   get '/exit', to: 'users#exit'
-  # получение сообщени
-  post '/get_message(.:format)', to: 'chats#get_message'
 
-  post '/read_message(.:format)', to: 'chats#read_message'
+  # получение сообщени
+  post '/get_message(.:format)', to: 'message#get'
+
+  post '/read_message(.:format)', to: 'message#read'
   # сохранение сообщений
-  post '/save_message(.:format)', to:'chats#save_message'
+  post '/save_message(.:format)', to:'message#save'
   
   # The priority is based upon order of creation:
   # first created -> highest priority.

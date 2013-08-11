@@ -3,13 +3,8 @@ class ApplicationController < ActionController::Base
 
   public
   # проверка аутентификации пользователя
-  def user_create?
-    @users_create = User.where('session = ?', session[:session_id])
-    if @users_create == []
-      return false
-    else 
-      return true
-    end
+  def user_logged_in?
+    users = User.user(session[:session_id]).exists?
   end
   
 end
