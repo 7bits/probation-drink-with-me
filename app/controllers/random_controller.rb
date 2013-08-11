@@ -46,28 +46,18 @@ private
   def send_test_message?(user)
     dude = User.select('name').user( session[:session_id]).first
     chat=Chat.new(:from => session[:session_id] , :message => dude.name , :where => user.session, :read => false )
-    if chat.save
-      return true
-    else 
-      return false
-    end
+    chat.save?
   end
 
   def update_status(session,status)
     user = User.user(session).first
-    if user.update_attributes( { 'search' => status } )
-      return true
-    else 
-      return false
-    end
+    user.update_attributes( { 'search' => status } )?
   end
 
   def status_false(session)
     status = update_status(session,false)
   end
-
-
-
+  
   def status?
     user = User.select('search').user(session[:session_id]).first
     user.search? 
@@ -75,20 +65,3 @@ private
 
 end
 
-require 'singleton'
-class Search 
-
-  include Singleton 
-
-  def search_active(session)
-    @users = User.select('name,session').user_are_in_search(session)
-    count_users = @users.length
-    if count_users > 1
-      user=@users[Random.rand(@users.length)]
-      elsif count_users == 1
-        return @users.first
-      elsif count_users == 0
-        return false
-    end
-  end 
-end

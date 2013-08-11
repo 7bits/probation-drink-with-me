@@ -54,7 +54,7 @@ $(document).ready(function(){
           alert('Собеседник найден');
           sessionInterlocutor = responceData.session
           nameInterlocutor = responceData.name
-          startInterval()
+          startInterval(getMessage)
 
         },
         201: function(responceData) {
@@ -63,7 +63,7 @@ $(document).ready(function(){
           nameInterlocutor = responceData.message
           $('.chat')
           .append("<li class='system-respond'><span> Установлено соединение с" + responceData.message + "</span></li>");
-          startInterval()
+          startInterval(getMessage)
 
         },
         404: function(responceData) {
@@ -82,7 +82,7 @@ $(document).ready(function(){
   }
 
   // запуск соединения с сервером сообщений
-  function startInterval(){ idInterval = setInterval(getMessage,1000) }
+  function startInterval(callback){ idInterval = setInterval(callback,1000) }
   // ЗАкрытие соединения
   function stopInterval(id){ clearInterval(id) }
   // Получение сообений
