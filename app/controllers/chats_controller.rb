@@ -1,5 +1,5 @@
 class ChatsController < ApplicationController
-  layout 'chat'
+  layout 'index'
   
    def messenger
       @chat = Chat.new
