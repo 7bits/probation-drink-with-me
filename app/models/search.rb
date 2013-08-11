@@ -9,9 +9,9 @@ class Search
     count_users = @users.length
     if count_users > 1
       user=@users[Random.rand(@users.length)]
-      elsif count_users == 1
+    elsif count_users == 1
         return @users.first
-      elsif count_users == 0
+    elsif count_users == 0
         return false
     end
   end 
