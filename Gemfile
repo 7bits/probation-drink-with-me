@@ -11,6 +11,7 @@ group :development,:test do
 	gem 'better_errors'
 	gem 'binding_of_caller'
 	gem "debugger"
+	gem "rubocop"
 end
 
 # Gems used only for assets and not required
