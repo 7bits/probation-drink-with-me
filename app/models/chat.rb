@@ -1,7 +1,7 @@
 class Chat < ActiveRecord::Base
-  attr_accessible :from, :message, :where ,:read
+  attr_accessible :from, :message, :where, :read
   
-  def self.unread_messages(session)
+  def self.unread_message(session)
   	where('`where` = ?  AND read = ? AND `from` != ?', session, false, session)
   end
 

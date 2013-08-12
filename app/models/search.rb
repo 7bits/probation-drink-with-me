@@ -2,17 +2,64 @@ require 'singleton'
 
 class Search 
 
-  include Singleton 
+  include Singleton
+
+  def set_session(session)
+    @session = session 
+  end
+
+  def find_user
+    if status?
+      unless user = search_active(@session)
+        if User.update_status(@session, false)
+          @user = nil
+        end
+      else
+        if User.update_status(@session, false)
+          if send_test_message?(user)
+            if User.update_status(user.session, false)
+              @user = user
+            else
+              @user = nil
+            end
+          else
+            @user = nil
+          end
+        end
+      end
+    else
+      @user = false
+    end
+  end
 
   def search_active(session)
     @users = User.select('name,session').user_are_in_search(session)
     count_users = @users.length
     if count_users > 1
-      user=@users[Random.rand(@users.length)]
+      user = @users[Random.rand(@users.length)]
     elsif count_users == 1
         return @users.first
     elsif count_users == 0
         return false
     end
-  end 
+  end
+
+private
+
+  def send_test_message?(user)
+    dude = User.select('name').user(@session).first
+    chat = Chat.new(
+      :from =>  @session,
+      :message => dude.name,
+      :where => user.session,
+      :read => false
+    )
+    chat.save
+  end
+  
+  def status?
+    user = User.select('search')
+                .user(@session).first
+    !!user.search 
+  end
 end

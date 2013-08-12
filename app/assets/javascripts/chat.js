@@ -55,15 +55,25 @@ $(document).ready(function(){
           sessionInterlocutor = responceData.session
           nameInterlocutor = responceData.name
           startInterval(getMessage)
-
         },
-        201: function(responceData) {
-          alert("Собеседник найден и имя его " + responceData.message)
-          sessionInterlocutor = responceData.from
-          nameInterlocutor = responceData.message
-          $('.chat')
-          .append("<li class='system-respond'><span> Установлено соединение с" + responceData.message + "</span></li>");
-          startInterval(getMessage)
+        201: function() {
+          $.ajax({
+            url: '/get_user',
+            dataType: 'json',
+            type: 'POST',
+            success: function(responceData){
+              sessionInterlocutor = responceData.session
+              nameInterlocutor = responceData.name
+              alert("Собеседник найден и имя его " + nameInterlocutor)
+              $('.chat')
+              .append("<li class='system-respond'><span> Установлено соединение с" + responceData.message + "</span></li>");
+              startInterval(getMessage)
+            },
+            error: function(){
+                alert("Ну воооот, опять все сломалось(((((")
+            }
+          })
+          
 
         },
         404: function(responceData) {

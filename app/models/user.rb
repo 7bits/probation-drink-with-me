@@ -9,4 +9,9 @@ class User < ActiveRecord::Base
   	where('session != ? AND search = ?', session, true)
   end
 
+  def self.update_status(session, status)
+    users = user(session).first
+    !!users.update_attributes({'search' => status})
+  end
+
 end
