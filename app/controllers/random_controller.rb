@@ -46,12 +46,12 @@ private
   def send_test_message?(user)
     dude = User.select('name').user( session[:session_id]).first
     chat=Chat.new(:from => session[:session_id] , :message => dude.name , :where => user.session, :read => false )
-    chat.save
+    chat.save?
   end
 
   def update_status(session,status)
     user = User.user(session).first
-    user.update_attributes( { 'search' => status } )
+    user.update_attributes( { 'search' => status } )?
   end
 
   def status_false(session)
@@ -60,6 +60,8 @@ private
   
   def status?
     user = User.select('search').user(session[:session_id]).first
-    user.search 
+    user.search? 
   end
+
 end
+
