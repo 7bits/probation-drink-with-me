@@ -1,13 +1,11 @@
 $(document).ready(function(){
-  idInterval=0;
-  var sessionInterlocutor;
-  var nameInterlocutor;
+  idInterval = 0;
+  sessionInterlocutor = 0;
+  nameInterlocutor = 0;
   //ОТправка сообщения по нажатию Ctrl+Enter
-  $("#chat_message").keyup(function(e){
-    if (e.ctrlKey && e.keyCode == 13) {
-      $('#btn-send').click();
-    }
-  })
+  $(window).unload(function(){
+    close()
+  });
   //Отправка сообщения
   $('#btn-send').click(function(){
     if(validation()){
@@ -16,11 +14,15 @@ $(document).ready(function(){
       $('#chat_message').val('');
     }	
   })
-
+  $("#chat_message").keyup(function(e){
+    if (e.ctrlKey && e.keyCode == 13) {
+      $('#btn-send').click();
+    }
+  })
   // поиск собеседника
   $('#btn-search').click(function(){
     stopInterval(idInterval);
-    installStatus();
+    setStatus();
   })
   // принудительное закрытие соединения
   $('#btn-close').click(function(){
@@ -37,9 +39,12 @@ $(document).ready(function(){
         }
     })
   }
-  function installStatus(){
+  function setStatus(){
+    if (sessionInterlocutor != 0) {
+      disconnect();
+    }
     $.ajax({
-      url:'/insall_status',
+      url:'/set_status',
       type:'POST',
       success:function(){ setTimeout(search,10000) },
       error:function(){ alert("Что-то пошло не так"); }
@@ -107,25 +112,30 @@ $(document).ready(function(){
       data:{
         where: sessionInterlocutor
       },
-      success: function(msg){
-        var message = JSON.parse(JSON.stringify( msg ))
-        for (var i = 0 ; i < message.length ; i++){
-          $('.chat').append("<li class='dude-message'><span class='where'>" + message[i].from + ":  </span><span>" + message[i].message + "</span></li>");
+      statusCode:{
+        200: function(msg){
+          var message = JSON.parse(JSON.stringify( msg ))
+          for (var i = 0 ; i < message.length ; i++){
+            $('.chat').append("<li class='dude-message'><span class='where'>" + message[i].from + ":  </span><span>" + message[i].message + "</span></li>");
 
-          $.ajax({
-            url: '/read_message',
-            type: 'POST',
-            dataType: 'json',
-            data:{
-              id : message[i].id
-            },
-            success: function(){
-              console.log('Прочитали')
-            },
-            error: function(){
-              console.log('ошибка ')
-            }
-          })
+            $.ajax({
+              url: '/read_message',
+              type: 'POST',
+              dataType: 'json',
+              data:{
+                id : message[i].id
+              },
+              success: function(){
+                console.log('Прочитали')
+              },
+              error: function(){
+                console.log('ошибка ')
+              }
+            })
+          }
+        },
+        201:function(){
+          alert("Собеседник ушел");
         }
       },
       error: function(){
@@ -138,5 +148,29 @@ $(document).ready(function(){
       return false
     else 
       return true
+  }
+  function close(){
+    disconnect();
+    $.ajax({
+      url:'/exit',
+      type:'GET'
+    })
+  }
+
+  function disconnect(){
+    $.ajax({
+      url:'/disconnect',
+      type:'POST',
+      dataType:'json',
+      data:{
+        session: sessionInterlocutor
+      },
+      success: function(){
+
+      },
+      error: function(){
+
+      }
+    })
   }
 })
