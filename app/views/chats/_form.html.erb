@@ -1,14 +1,11 @@
 
 <%= form_for(@chat) do |f| %>
-
-    <%= f.label :message %><br />
-
-    <%= f.text_field :message %>
-
-
-  	<input type='button' name='btn-send' class='btn-send' id='btn-send' value='Отправить'>
-  	<!-- озже эта кнопка превратится в кнопку поиска собеседника -->
- 
-   	<input type='button' name='btn-search' class='btn-search' id='btn-search' value='Search'> 
+    <div id='message_box'>
+      <%= f.text_area :message, :size => "70x4" %>
+    </div>
+    <div id='btn-form'>
+    	<span class='btn-send' id='btn-send'>Send</span>
+     	<span class='btn-search' id='btn-search'>Search</span>
+    </div>
 
 <% end %>

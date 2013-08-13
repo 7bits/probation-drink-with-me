@@ -123,3 +123,27 @@ html {
   -webkit-border-radius: 60px;
   border-radius: 60px;
 }
+.chat{
+  li.system-respond{
+    background: #00ff00;
+    color:#000;
+  }
+  li.dude-message{
+    span.where{
+
+    }
+  }
+
+}
+#btn-form{
+  width: 15%;
+  height: 34px;
+  display: inline-block;
+  background: rgb(37,37,37);
+  border-radius: 10px;
+  text-align: center;
+  padding-top: 10px;
+  color: rgb(127,122,165);
+  margin-left: 20px;
+  box-shadow: 0 0 1px 1px,0 0 2px 0;
+}

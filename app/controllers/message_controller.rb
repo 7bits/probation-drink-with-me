@@ -11,11 +11,11 @@ class MessageController <  ApplicationController
       end
         render json: @messages, status: 200
     else 
-      system_message = System.get_system_message(session[:session_id],'disconect')
-      if !!system_message
-        render json: {}, status: 201
+      system_message = System.get_system_message(session[:session_id],'disconnect')
+      if system_message == []
+        render json: system_message, status: 200
       else
-        render json: {}, status: 200
+        render json: system_message, status: 201
       end
     end
   end
@@ -33,7 +33,12 @@ class MessageController <  ApplicationController
 
   # POST /save
   def save
-    @message = Chat.new(:from => session[:session_id], :message => params[:message], :where => params[:where], :read => false )
+    @message = Chat.new(
+      :from => session[:session_id], 
+      :message => params[:message], 
+      :where => params[:where], 
+      :read => false
+    )
     respond_to do |f|
       if @message.save
         f.json { render json: @message }
