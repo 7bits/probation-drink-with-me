@@ -47,14 +47,9 @@ class Search
 private
 
   def send_test_message?(user)
-    dude = User.select('name').user(@session).first
-    chat = Chat.new(
-      :from =>  @session,
-      :message => dude.name,
-      :where => user.session,
-      :read => false
-    )
-    chat.save
+    about_me = User.select('name').user(@session).first
+    message = System.create_system_message_connect(@session,about_me.name,user.session);
+    !!message.save
   end
   
   def status?

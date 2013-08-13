@@ -21,7 +21,7 @@ class SearchController < ApplicationController
   end
 
   def get_user
-    message = Message.get_data_user(session[:session_id])
-    render json: { name: message.message, session: message.from }, status: 200
+    data = System.get_system_message(session[:session_id],'connect')
+    render json: data, status: 200
   end
 end

@@ -1,111 +1,53 @@
-/*.chat{
-	display:block;
-	width:600px;
-	height:230px;
-	border:1px solid;
-	overflow-x:hidden;
-	padding:0;
-	li{
-		border-top: 1px solid;
-	    display: block;
-	    margin: 0;
-	    min-height: 20px;
-	    padding: 0;
 
-	    &:first-child{
-	    	border:none !important;
-	    }
-	}
-
-}
-
-#chat_message{
-	min-width:600px;
-	max-width:600px;
-	height:100px;
-}*/
-
-html:body {
-
-  background: url(images/brick.gif) no-repeat center center fixed;
+html {
+  background: url(/assets/brick.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
- background-size: cover;
-
-}
-/*body {
-    
-    /*background: #200000;  /* width: 100%; /*overflow: inherit;background-image: url("image/brick.gif");background-repeat: no-repeat;*/
-   /* position: relative;right: 0px;left: 0px;top: 0px;bottom: 0px;
-  	width: 100%;
-  	height:100%;
-  	margin: 0px;
-  	
-    }*/
-img.bg {
-
-  /* Set rules to fill background */
-  min-height: 100%;
-  min-width: 1024px;
-  /* Set up proportionate scaling */
+  background-size: cover;
+  height: 100%;
   width: 100%;
-  height: auto;
-  /* Set up positioning */
-  position: fixed;
-  top: 0;
-  left: 0;
-
 }
 
-@media screen and (max-width: 1024px) { /* Specific to this particular image */
-
-  img.bg {
-
-    left: 50%;
-    margin-left: -512px;   /* 50% */
-
-  }
-
+#header {
+  width: 100%;
+  height: 20%;
 }
 
-.content{
-		
-	width: 1700px;
-	position: absolute;
-  right: 0px;
-  left: 0px;
-  top: 0px;
-  bottom: 0px;
-	margin: 0px auto;		
-	height: 100%;
+#header #logo {
+  width: 50%;
+  height: 100%;
 }
 
-.forest {	
+#header #logo img {
+  width: 70%;
+}
 
-	position: absolute;top: 0px;left: 0px;	
+#content {
+  width: 100%;
+  height: 80%;
+}
 
+.content-wrapper {
+  margin: 0% auto 15% auto;
+  width: 60%;
+  height: 80%;
+  background: #111111;
 }
 
 .sprite {
-
   background: url(assets/sprite.png);
-  width: 100px;
-  height: 100px;
-
-  -moz-border-radius: 60px;
-  -webkit-border-radius: 60px;
+  width: 80px;
+  height: 80px;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
   border-radius: 60px;
-
-  border:1px #CC00FF solid;
-
+  border: 1px #CC00FF solid;
   box-shadow: 0px 0px 1px 4px #6600CC,0px 0px 1px 5px #99CCFF, 0px 0px 1px 8px #33CCFF;
-
-/*ackground: #6600CC; 
- border: 3px solid #6600CC; 
- border: 4px solid #99CCFF; 
- box-shadow: 0 0 7px #99CCFF; */
-
+  /*ackground: #6600CC; 
+   border: 3px solid #6600CC; 
+   border: 4px solid #99CCFF; 
+   box-shadow: 0 0 7px #99CCFF; */
  /*display: -moz-box;
  display: -webkit-box;
  display: box;
@@ -119,143 +61,52 @@ img.bg {
  box-pack: center;
  box-align: center;
 */
-  position:absolute; 
-  top: 300px; 
+  top: 300px;
   left: 350px;
-
 }
 
 .sprite:hover {
-
-	-webkit-transform: rotate(360deg) scale(0.2);
-	-moz-transform: rotate(360deg) scale(1.2);
-	-o-transform: rotate(360deg) scale(2);
-	-ms-transform: rotate(360deg) scale(2);
-	transform: rotate(360deg) scale(2);
-
-	border:1px #CC00FF solid;
-
+  -webkit-transform: rotate(360deg) scale(1.2);
+  -moz-transform: rotate(360deg) scale(1.2);
+  -o-transform: rotate(360deg) scale(1.2);
+  -ms-transform: rotate(360deg) scale(1.2);
+  transform: rotate(360deg) scale(1.2);
+  border: 1px #CC00FF solid;
   box-shadow: 0px 0px 1px 4px #6600CC,0px 0px 1px 5px #99CCFF, 0px 0px 1px 8px #33CCFF, 0 0 20px #9999FF;
   -webkit-box-shadow: 0px 0px 1px 4px #6600CC,0px 0px 1px 5px #99CCFF, 0px 0px 1px 8px #33CCFF, 0 0 17px #9999FF;
   -moz-box-shadow: 0px 0px 1px 4px #6600CC,0px 0px 1px 5px #99CCFF, 0px 0px 1px 8px #33CCFF, 0 0 30px #9999FF;
 }
 
 .animac {
-
   width: 600px;
-  -moz-animation: animaciya 6s ease-in-out 1s infinite alternate;
-  -webkit-animation: animaciya 8s ease-in-out 2s infinite alternate;
-  -ms-animation: animaciya 8s ease-in-out 2s infinite alternate;
-
-  color: mediumpurple;
-	font-size: 20pt;
-	position: absolute; top: 10px; left: 90px;
-	text-align: center;
+  color: #9370DB;
+  font-size: 20pt;
+  top: 10px;
+  left: 90px;
+  text-align: center;
 }
 
-@-moz-keyframes animaciya { 
-
-  from {width: 600px; /*background-color: pink;*/}  
-  to {width: 700px; /*background-color: white;*/} 
-}
-
-@-webkit-keyframes animaciya {
-
-  from {width: 600px;}
-  to {width: 700px; }
-}
-
-@-ms-keyframes animaciya {
-
-  from {width: 600px;}
-  to {width: 700px;}
-}
-
-.actions{
-
-	position: absolute; 
-	top: 0px; 
-	left: 0px;
-	
-}
-
-.actions input{
-
+.actions input {
   background: url(assets/sprite.png);
-  color: #CC00FF; /*border:medium none;*/
-
+  color: #CC00FF;
+  /*border:medium none;*/
   width: 100px;
   height: 100px;
-
   -moz-border-radius: 60px;
   -webkit-border-radius: 60px;
   border-radius: 60px;
-
 }
 
 .actions:active {
-
   background-color: black;
   width: 100px;
   height: 100px;
-
   -moz-border-radius: 60px;
   -webkit-border-radius: 60px;
   border-radius: 60px;
-
 }
 
-.first{
-
-	position:absolute;
-  top: 260px;
-  left: 30%;
-  right: 30%;
-	
-}
-
-.first1{
-
-	position:absolute;
-  top: 260px;
-  left: 30%;
-  right: 30%;
-	
-}
-.nick p{
-	color: paleturquoise;
-	font-size: 18pt;
-	position: absolute; 
-  top: 150px; 
-  left: 220px;
-	
-}
-
-.field{
-	position:absolute;
-  top:175px;
-  left: 430px;
-}
-
-.field1{
-
-	position:absolute;
-  top:320px;
-  left: 80px;
-  right: 80px;
-	
-}
-.btn-send{
-
-	position: absolute; 
-  top:480px; 
-  left: 200px;
-
-}
-.btn-search{
-
-	position: absolute;
-  top: 480px; 
-  left: 450px;
-
+.nick p {
+  color: #AFEEEE;
+  font-size: 16pt;
 }

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130807063740) do
+ActiveRecord::Schema.define(:version => 20130813040901) do
 
   create_table "chats", :force => true do |t|
     t.text     "from"
@@ -20,6 +20,14 @@ ActiveRecord::Schema.define(:version => 20130807063740) do
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
     t.boolean  "read"
+  end
+
+  create_table "systems", :force => true do |t|
+    t.text     "to"
+    t.text     "message"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+    t.text     "type"
   end
 
   create_table "users", :force => true do |t|

@@ -41,13 +41,13 @@ $(document).ready(function(){
     $.ajax({
       url:'/insall_status',
       type:'POST',
-      success:function(){ setTimeout(findInterlocutor,10000) },
+      success:function(){ setTimeout(search,10000) },
       error:function(){ alert("Что-то пошло не так"); }
     })
   }
-  function findInterlocutor(){
+  function search(){
     $.ajax({
-      url: '/find_interlocutor',
+      url: '/search',
       type:'POST',
       statusCode:{
         200: function(responceData) {
@@ -58,15 +58,18 @@ $(document).ready(function(){
         },
         201: function() {
           $.ajax({
-            url: '/get_user',
+            url: '/user_info',
             dataType: 'json',
             type: 'POST',
             success: function(responceData){
-              sessionInterlocutor = responceData.session
-              nameInterlocutor = responceData.name
+              responceData = JSON.parse(JSON.stringify( responceData.message ))
+              json = JSON.parse(responceData)
+              sessionInterlocutor = json.session
+              console.log(sessionInterlocutor)
+              nameInterlocutor = json.name
               alert("Собеседник найден и имя его " + nameInterlocutor)
               $('.chat')
-              .append("<li class='system-respond'><span> Установлено соединение с" + responceData.message + "</span></li>");
+              .append("<li class='system-respond'><span> Установлено соединение с " + json.name + "</span></li>");
               startInterval(getMessage)
             },
             error: function(){

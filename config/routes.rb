@@ -12,8 +12,8 @@ Drink::Application.routes.draw do
   get '/exit',                          to: 'users#exit'
 
   post '/insall_status(.:format)',      to: 'search#status_search'
-  post '/find_interlocutor(.:format)',  to: 'search#search'
-  post '/get_user',                     to: 'search#get_user'
+  post '/search(.:format)',             to: 'search#search'
+  post '/user_info',                    to: 'search#get_user'
   post '/get_message(.:format)',        to: 'message#get'
   post '/read_message(.:format)',       to: 'message#read'
   post '/save_message(.:format)',       to: 'message#save'

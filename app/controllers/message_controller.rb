@@ -1,16 +1,22 @@
 class MessageController <  ApplicationController
   # POST /get
   def get
-    @messages = Chat.select('id, `from` , message')
-                    .unread_message(session[:session_id])
-                    .each do |message|
-      username = User.select('name')
+    messages = Message.messages_for_me(session[:session_id])
+    if messages.exists?
+      @messages = messages.each do |message|
+        username = User.select('name')
                       .user(message.from)
                       .last
-      message.from = username.name
-    end
-    respond_to do |f|
-      f.json { render json: @messages }
+        message.from = username.name
+      end
+        render json: @messages, status: 200
+    else 
+      system_message = System.get_system_message(session[:session_id],'disconect')
+      if !!system_message
+        render json: {}, status: 201
+      else
+        render json: {}, status: 200
+      end
     end
   end
 
