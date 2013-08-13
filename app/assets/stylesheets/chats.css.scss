@@ -21,6 +21,8 @@ html {
 
 #header #logo img {
   width: 70%;
+  margin-top: -10px;
+  margin-left: -30px;
 }
 
 #content {
@@ -33,34 +35,39 @@ html {
   width: 60%;
   height: 80%;
   background: #111111;
+  box-shadow: inset 3px 3px 20px 3px #000, -2px -2px ;
 }
 
 #content #text {
   color: #9370DB;
-  font-size: 12pt;
+  font-size: 14pt;
   padding: 15px;
   text-align: center;
 }
 
 .common-field {
-  padding-left: 70px;
-  padding-right: 70px;
-  margin: 20px;
+  margin: 20px auto;
+  width: 35%;
 }
 
 .common-field #nick {
   color: #AFEEEE;
-  font-size: 10pt;
+  font-size: 12pt;
   float: left;
 }
 
 .common-field #user_name {
-  /*box-shadow: 0px 0px 1px 1px #6600CC;*/
+  box-shadow: 0px 0px 3px 0.7px #6699CC;
   float: right;
   background: #111111;
+  margin-top: 9px;
+  margin-left: 10px;
+   border: 0px;
 }
 
 .sprite {
+    margin:10% auto;
+
   width: 80px;
   height: 80px;
   -moz-border-radius: 50px;
@@ -82,8 +89,6 @@ html {
   box-pack: center;
   box-align: center;
 
-  margin-top: 50px;
-  margin-bottom: 50px;
 }
 
 .sprite:hover {
@@ -108,7 +113,6 @@ html {
   -webkit-border-radius: 60px;
   border-radius: 60px;
 
-  padding-top: 30px;
 }
 
 .actions:active {
