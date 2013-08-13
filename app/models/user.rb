@@ -11,7 +11,7 @@ class User < ActiveRecord::Base
 
   def self.update_status(session, status)
     users = user(session).first
-    !!users.update_attributes({'search' => status})
+    users.update_attributes({'search' => status})
   end
 
 end

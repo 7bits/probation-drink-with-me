@@ -41,5 +41,9 @@ class UsersController < ApplicationController
 
     redirect_to root_path
   end
+
+  def disconnect
+    message = System.create_system_message_disconnect(params[:session])
+  end
   
 end

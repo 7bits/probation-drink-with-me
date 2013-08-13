@@ -8,14 +8,16 @@ class System < ActiveRecord::Base
       :type => 'connect', 
       :message => { name:my_name, session:my_session}.to_json
     )
+    @message.save
   end
 
-  def self.create_system_message_disconnect(my_session, my_name, his_session)
+  def self.create_system_message_disconnect(his_session)
     @message = System.new(
       :to => his_session, 
       :type => 'disconnect', 
       :message => ""
     )
+    @message.save
   end
 
   def self.get_system_message(session,type)

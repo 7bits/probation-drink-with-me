@@ -49,12 +49,11 @@ private
   def send_test_message?(user)
     about_me = User.select('name').user(@session).first
     message = System.create_system_message_connect(@session,about_me.name,user.session);
-    !!message.save
   end
   
   def status?
     user = User.select('search')
                 .user(@session).first
-    !!user.search 
+    user.search 
   end
 end
