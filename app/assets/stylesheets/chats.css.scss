@@ -29,14 +29,38 @@ html {
 }
 
 .content-wrapper {
-  margin: 0% auto 15% auto;
+  margin: -4% auto 15% auto;
   width: 60%;
   height: 80%;
   background: #111111;
 }
+#content #text {
+  
+  color: #9370DB;
+  font-size: 12pt;
+  padding: 15px;
+  text-align: center;
+}
+
+.common-field{
+  padding-left: 70px;
+  padding-right: 70px;
+  color: black;
+  margin: 20px;
+  }
+
+.common-field #nick{
+  color: #AFEEEE;
+  font-size: 10pt;
+  float: left;
+}
+
+.common-field #field{
+  box-shadow: 0px 0px 1px 1px #6600CC;
+  float: right;
+}
 
 .sprite {
-  background: url(assets/sprite.png);
   width: 80px;
   height: 80px;
   -moz-border-radius: 50px;
@@ -77,14 +101,7 @@ html {
   -moz-box-shadow: 0px 0px 1px 4px #6600CC,0px 0px 1px 5px #99CCFF, 0px 0px 1px 8px #33CCFF, 0 0 30px #9999FF;
 }
 
-.animac {
-  width: 600px;
-  color: #9370DB;
-  font-size: 20pt;
-  top: 10px;
-  left: 90px;
-  text-align: center;
-}
+
 
 .actions input {
   background: url(assets/sprite.png);
@@ -104,9 +121,4 @@ html {
   -moz-border-radius: 60px;
   -webkit-border-radius: 60px;
   border-radius: 60px;
-}
-
-.nick p {
-  color: #AFEEEE;
-  font-size: 16pt;
 }
