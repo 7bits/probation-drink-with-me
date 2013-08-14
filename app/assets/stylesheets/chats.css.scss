@@ -167,11 +167,14 @@ html {
     width: 70%;
 }
 #chat_message {
-    background: none repeat scroll 0 0 #111111;
-    border: 2px solid #626095;
-    box-shadow: 0 0 2px 1px #516EC5;
-    height: 70%;
-    width: 100%;
+  background: none repeat scroll 0 0 #111111;
+  border: 2px solid #626095;
+  box-shadow: 0 0 2px 1px #516EC5;
+  height: 69%;
+  width: 99%;
+  padding: 1% 0 0 1%;
+  margin-left: -2px;
+  color: #AAAAAA;
 }
 .chat {
     border: 2px solid #626095;

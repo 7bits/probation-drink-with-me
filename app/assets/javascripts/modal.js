@@ -13,19 +13,20 @@ function windowError(text){
 	windowShow();
 	$('#ok-btn').click(function(){
 		windowHide();
-		return true;
+		status = true;
 	})
 }
 
 function windowQuestion(text){
 	windowShow();
+	var status
 	$('#yes-btn').click(function(){
 		windowHide();
-		return true;
+		status = true;
 	})
 	$('#no-btn').click(function(){
 		windowHide();
-		return false;
+		status = false;
 	})
 }
 

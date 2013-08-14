@@ -1,6 +1,9 @@
 <h1 class = 'exit-bar'><a href='/exit'>Выйти</a></h1>
+<%= javascript_include_tag "chat_event.js"%>
+<%= javascript_include_tag "chats.js"%>
+
 <div class="content-wrapper"> 
-	<%= javascript_include_tag "chats.js"%>
+	
 	<input type='hidden' id='my_name' value='<%= @name.name %>'>
 	<div id='chat_wrapper'>
 		<ul class='chat' >
