@@ -48,22 +48,27 @@ html {
     text-align: center;
 }
 .common-field {
-    margin: 20px auto;
-    width: 35%;
+  margin: 8px auto;
+  width: 270px;
 }
-.common-field #nick {
-    color: #AFEEEE;
-    float: left;
-    font-size: 12pt;
+
+#nick {
+  color: #AFEEEE;
+  font-size: 12pt;
+  float: left;
+  padding: 0px;
 }
-.common-field #user_name {
-    background: none repeat scroll 0 0 #111111;
-    border: 0 none;
-    box-shadow: 0 0 3px 0.7px #6699CC;
-    float: right;
-    margin-left: 10px;
-    margin-top: 9px;
-}
+
+#user_name {
+  box-shadow: 0px 0px 3px 0.7px #6699CC;
+  background: #111111;
+  border: 0px;
+  float: right;
+  height: 20px;
+  width: 120px;
+  margin-top: 10px;
+}  
+
 .sprite {
     -moz-box-align: center;
     -moz-box-orient: horizontal;
@@ -72,9 +77,9 @@ html {
     border-radius: 60px 60px 60px 60px;
     box-shadow: 0 0 1px 4px #6600CC, 0 0 1px 5px #99CCFF, 0 0 1px 8px #33CCFF;
     display: -moz-box;
-    height: 80px;
-    margin: 10% auto;
-    width: 80px;
+    height: 70px;
+    margin: 30px auto;
+    width: 70px;
 }
 .sprite:hover {
     -moz-transform: rotate(360deg) scale(1.2);
@@ -83,16 +88,16 @@ html {
 }
 .actions input {
     background: url("assets/sprite.png") repeat scroll 0 0 transparent;
-    border-radius: 60px 60px 60px 60px;
+    border-radius: 50px 50px 50px 50px;
     color: #CC00FF;
-    height: 100px;
-    width: 100px;
+    height: 90px;
+    width: 90px;
 }
 .actions:active {
     background-color: black;
-    border-radius: 60px 60px 60px 60px;
-    height: 100px;
-    width: 100px;
+    border-radius: 50px 50px 50px 50px;
+    height: 90px;
+    width: 90px;
 }
 #btn-form {
     height: 30%;
