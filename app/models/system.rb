@@ -23,6 +23,11 @@ class System < ActiveRecord::Base
   def self.get_system_message(session,type)
     @message = System.select('message')
                       .where("`to` = ? AND type = ? AND read = ?",session,type,false)
-    @message.update_attribute('read', true);
+    if @message.exists?
+      @message.each do |message|
+        message.update_attributes({'read'=> true});
+      end
+    end
+    return @message
   end
 end
