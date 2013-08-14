@@ -8,10 +8,13 @@ $(document).ready(function(){
   $(window).unload(function(){
     close()
   });
+  $('.chat').append("<li class='my-message'><span class='where'>кому-то : </span><span class = 'message' >Текст сообщения</span></li>");
+  $('.chat').append("<li class='system-respond'><span class='where'></span><span class = 'message'> Установлено соединение с </span></li>");
+  $('.chat').append("<li class='dude-message'><span class='where'>Собеседник :  </span><span class = 'message'>Его сообщение</span></li>");
   //Отправка сообщения
   $('#btn-send').click(function(){
     if(validation()){
-      $('.chat').append("<li class='my-message'><span class='where'>кому-то : </span><span>"+$('#chat_message').val()+"</span></li>");
+      $('.chat').append("<li class='my-message'><span class='where'>кому-то : </span><span class = 'message'>"+$('#chat_message').val()+"</span></li>");
       sendMessage();
       $('#chat_message').val('');
     }	
@@ -77,7 +80,7 @@ $(document).ready(function(){
               nameInterlocutor = json.name
               $(nameInterlocutor).appendTo('#name_dude');
               $('.chat')
-              .append("<li class='system-respond'><span class = 'where'>R2D2</span><span class = 'message'> Установлено соединение с " + json.name + "</span></li>");
+              .append("<li class='system-respond'><span class='where'></span><span class = 'message'> Установлено соединение с " + json.name + "</span></li>");
               startInterval(getMessage)
             },
             error: function(){

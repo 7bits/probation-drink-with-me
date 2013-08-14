@@ -12,7 +12,7 @@ class MessageController <  ApplicationController
         render json: @messages, status: 200
     else 
       system_message = System.get_system_message(session[:session_id],'disconnect')
-      if system_message == []
+      if system_message.exists? 
         render json: system_message, status: 200
       else
         render json: system_message, status: 201

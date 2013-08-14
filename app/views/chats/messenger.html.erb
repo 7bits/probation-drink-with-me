@@ -1,9 +1,13 @@
-<input type='hidden' id='my_name' value='<%= @name.name %>'>
-<p id='status_bar'><span id='name_dude'></span> at the bar</p>
-<h1><a href='/exit'>Выйти</a></h1>
+<h1 class = 'exit-bar'><a href='/exit'>Выйти</a></h1>
+<div class="content-wrapper"> 
+	<%= javascript_include_tag "chats.js"%>
+	<input type='hidden' id='my_name' value='<%= @name.name %>'>
+	<div id='chat_wrapper'>
 		<ul class='chat' >
 			
 		</ul>
 
 		<%= render 'form' %>
+	</div>
+</div>
 	

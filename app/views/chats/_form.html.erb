@@ -1,11 +1,13 @@
 
 <%= form_for(@chat) do |f| %>
     <div id='message_box'>
-      <%= f.text_area :message, :size => "70x4" %>
+      <%= f.text_area :message, :size => "", :class => 'neon' %>
     </div>
     <div id='btn-form'>
-    	<span class='btn-send' id='btn-send'>Send</span>
-     	<span class='btn-search' id='btn-search'>Search</span>
+    	<div id='btn-wrapper'>
+	    	<span class='btn-manage btn-send neon' id='btn-send'>Send</span>
+	     	<span class='btn-manage btn-search noen' id='btn-search'>Search</span>
+	     </div>
     </div>
 
 <% end %>

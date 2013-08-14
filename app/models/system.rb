@@ -22,6 +22,6 @@ class System < ActiveRecord::Base
 
   def self.get_system_message(session,type)
     @message = System.select('message')
-                      .where("`to` = ? AND type = ?",session,type).last
+                      .where("`to` = ? AND type = ?",session,type)
   end
 end
