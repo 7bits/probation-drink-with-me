@@ -1,0 +1,65 @@
+#modal-window {
+    background: inherit;
+    box-shadow: 0 0 11px 4px black, 0 0 0 1px #516EC5 inset;
+    height: 20%;
+    left: 35%;
+    position: absolute;
+    top: 40%;
+    width: 30%;
+    display:none;
+}
+#window-wrapper {
+    height: 95%;
+    margin: 0 auto;
+    width: 95%;
+}
+#window-content {
+    height: 60%;
+    margin: 0;
+    width: 100%;
+}
+#btn-ok {
+    display: none;
+    height: 100%;
+    width: 100%;
+}
+#ok-btn {
+	cursor: pointer;
+    background: none repeat scroll 0 0 #252525;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0 0 0 1px #516EC5;
+    color: #7F7AA5;
+    display: block;
+    height: 80%;
+    line-height: 200%;
+    margin: 0 auto;
+    text-align: center;
+    width: 30%;
+}
+#window-btn {
+    height: 40%;
+    width: 100%;
+}
+#btn-wrapper {
+    height: 100%;
+    width: 100%;
+}
+#btn-yes-no {
+	display:none;
+    height: 95%;
+    margin: 0 auto;
+    width: 70%;
+}
+#btn-yes-no > span {
+	cursor: pointer;
+    background: none repeat scroll 0 0 #252525;
+    border: 1px solid;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0 0 0 1px #516EC5;
+    color: #7F7AA5;
+    display: inline-block;
+    height: 80%;
+    line-height: 200%;
+    text-align: center;
+    width: 48%;
+}

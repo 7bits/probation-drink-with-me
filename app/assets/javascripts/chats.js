@@ -3,14 +3,15 @@ $(document).ready(function(){
   my_name = $('#my_name').val();
   sessionInterlocutor = 0;
   nameInterlocutor = 0;
-  //ОТправка сообщения по нажатию Ctrl+Enter
-  alert(my_name);
-  $(window).unload(function(){
+  /*$(window).unload(function(){
     close()
-  });
-  $('.chat').append("<li class='my-message'><span class='where'>кому-то : </span><span class = 'message' >Текст сообщения</span></li>");
-  $('.chat').append("<li class='system-respond'><span class='where'></span><span class = 'message'> Установлено соединение с </span></li>");
-  $('.chat').append("<li class='dude-message'><span class='where'>Собеседник :  </span><span class = 'message'>Его сообщение</span></li>");
+  });*/
+  // тест
+    $('.chat').append("<li class='my-message'><span class='where'>кому-то : </span><span class = 'message' >Текст сообщения</span></li>");
+    $('.chat').append("<li class='system-respond'><span class='where'></span><span class = 'message'> Установлено соединение с </span></li>");
+    $('.chat').append("<li class='dude-message'><span class='where'>Собеседник :  </span><span class = 'message'>Его сообщение</span></li>");
+  // конец теста
+
   //Отправка сообщения
   $('#btn-send').click(function(){
     if(validation()){
@@ -26,8 +27,14 @@ $(document).ready(function(){
   })
   // поиск собеседника
   $('#btn-search').click(function(){
-    stopInterval(idInterval);
-    setStatus();
+    if(idInterval==0){
+      setStatus();
+      }else{
+        if(windowModal('','Вы действительно хотите cменить пользователя?')){
+          stopInterval(idInterval);
+          setStatus();
+        }
+      }
   })
   // принудительное закрытие соединения
   $('#btn-close').click(stopInterval)
@@ -50,7 +57,7 @@ $(document).ready(function(){
       url:'/set_status',
       type:'POST',
       success:function(){ setTimeout(search,10000) },
-      error:function(){ alert("Что-то пошло не так"); }
+      error:function(){ windowModal('error',"Что-то пошло не так"); }
     })
   }
   function status(){
@@ -62,9 +69,10 @@ $(document).ready(function(){
       type:'POST',
       statusCode:{
         200: function(responceData) {
-          alert('Собеседник найден');
           sessionInterlocutor = responceData.session
           nameInterlocutor = responceData.name
+          $('.chat')
+              .append("<li class='system-respond'><span class='where'></span><span class = 'message'> Установлено соединение с " + nameInterlocutor + "</span></li>");
           startInterval(getMessage)
         },
         201: function() {
@@ -73,33 +81,32 @@ $(document).ready(function(){
             dataType: 'json',
             type: 'POST',
             success: function(responceData){
-              responceData = JSON.parse(JSON.stringify( responceData.message ))
-              json = JSON.parse(responceData)
+              json = JSON.parse(responceData.message)
               sessionInterlocutor = json.session
               console.log(sessionInterlocutor)
               nameInterlocutor = json.name
               $(nameInterlocutor).appendTo('#name_dude');
               $('.chat')
-              .append("<li class='system-respond'><span class='where'></span><span class = 'message'> Установлено соединение с " + json.name + "</span></li>");
+              .append("<li class='system-respond'><span class='where'></span><span class = 'message'> Установлено соединение с " + nameInterlocutor + "</span></li>");
               startInterval(getMessage)
             },
             error: function(){
-                alert("Ну воооот, опять все сломалось(((((")
+                windowModal('error',"Ну воооот, опять все сломалось(((((")
             }
           })
           
 
         },
         404: function(responceData) {
-          alert("Нет активных пользоавтелей");
+          windowModal('error',"Нет активных пользоавтелей");
 
         },
         406: function(responceData) {
-          alert("Произошла ошибка, попробуйте найти собеседника позже");
+          windowModal('error',"Произошла ошибка, попробуйте найти собеседника позже");
 
         },
         500: function(responceData) {
-          alert("Вот хз что произошло, зайди в фаирбаг и почини, че как лох сидишь")
+          windowModal('error',"Вот хз что произошло, зайди в фаирбаг и почини, че как лох сидишь")
         }
       }
     })
@@ -141,12 +148,12 @@ $(document).ready(function(){
           }
         },
         201:function(){
-          alert("Собеседник ушел");
+          windowModal('error',"Собеседник ушел");
           stopInterval();
         }
       },
       error: function(){
-        alert("Печаль")
+        windowModal('error',"Печаль")
       }
     })
   }
