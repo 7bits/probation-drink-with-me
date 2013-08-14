@@ -1,6 +1,6 @@
 class System < ActiveRecord::Base
   include ActiveModel::Serializers::JSON
-  attr_accessible :message, :to, :type
+  attr_accessible :message, :to, :type, :read
 
   def self.create_system_message_connect(my_session, my_name, his_session)
     @message = System.new(
@@ -22,6 +22,7 @@ class System < ActiveRecord::Base
 
   def self.get_system_message(session,type)
     @message = System.select('message')
-                      .where("`to` = ? AND type = ?",session,type)
+                      .where("`to` = ? AND type = ? AND read = ?",session,type,false)
+    @message.update_attribute('read', true);
   end
 end
