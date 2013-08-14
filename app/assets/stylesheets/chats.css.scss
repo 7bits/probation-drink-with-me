@@ -48,51 +48,91 @@ html {
     text-align: center;
 }
 .common-field {
-    margin: 20px auto;
-    width: 35%;
+  margin: 8px auto;
+  width: 270px;
 }
-.common-field #nick {
-    color: #AFEEEE;
-    float: left;
-    font-size: 12pt;
+
+#nick {
+  color: #AFEEEE;
+  font-size: 12pt;
+  float: left;
+  padding: 0px;
 }
-.common-field #user_name {
-    background: none repeat scroll 0 0 #111111;
-    border: 0 none;
-    box-shadow: 0 0 3px 0.7px #6699CC;
-    float: right;
-    margin-left: 10px;
-    margin-top: 9px;
-}
+
+#user_name {
+  box-shadow: 0px 0px 3px 0.7px #6699CC;
+  background: #111111;
+  border: 0px;
+  float: right;
+  height: 20px;
+  width: 120px;
+  margin-top: 10px;
+}  
+
 .sprite {
-    -moz-box-align: center;
-    -moz-box-orient: horizontal;
-    -moz-box-pack: center;
+
     border: 1px solid #CC00FF;
-    border-radius: 60px 60px 60px 60px;
+    border-radius: 70px;
     box-shadow: 0 0 1px 4px #6600CC, 0 0 1px 5px #99CCFF, 0 0 1px 8px #33CCFF;
+  
+    height: 95px;
+    margin: 50px auto;
+    width: 95px;
+
+  -moz-border-radius: 60px;
+  -webkit-border-radius: 60px;
+  -o-border-radius: 60px;
     display: -moz-box;
-    height: 80px;
-    margin: 10% auto;
-    width: 80px;
+  display: -webkit-box;
+  display: box;
+  -moz-box-orient: horizontal; 
+  -webkit-box-orient: horizontal;
+  -o-box-orient: horizontal;
+  box-orient: horizontal;
+
+  -moz-box-pack: center;
+  -webkit-box-pack: center;
+   -o-box-pack: center;
+  
+  box-pack: center;
+  box-align: center;
+-moz-box-align: center;
+-webkit-box-align: center;
+-o-box-align: center;
 }
+
 .sprite:hover {
-    -moz-transform: rotate(360deg) scale(1.2);
+
+  -webkit-transform: rotate(360deg) scale(1.2);
+  -moz-transform: rotate(360deg) scale(1.2);
+  -o-transform: rotate(360deg) scale(1.2);
+  -ms-transform: rotate(360deg) scale(1.2);
+  transform: rotate(360deg) scale(1.2);
+
     border: 1px solid #CC00FF;
     box-shadow: 0 0 1px 4px #6600CC, 0 0 1px 5px #99CCFF, 0 0 1px 8px #33CCFF, 0 0 30px #9999FF;
+    -webkit-box-shadow: 0px 0px 1px 4px #6600CC,0px 0px 1px 5px #99CCFF, 0px 0px 1px 8px #33CCFF, 0 0 30px #9999FF;
+    -moz-box-shadow: 0px 0px 1px 4px #6600CC,0px 0px 1px 5px #99CCFF, 0px 0px 1px 8px #33CCFF, 0 0 30px #9999FF;
+
 }
-.actions input {
-    background: url("assets/sprite.png") repeat scroll 0 0 transparent;
-    border-radius: 60px 60px 60px 60px;
+.sprite input {
+    /*background: #171717;*/
+    background: none;
+    border-radius: 70px;
     color: #CC00FF;
-    height: 100px;
-    width: 100px;
+    height: 97px;
+    width: 97px;
+    -moz-border-radius: 70px;
+    -webkit-border-radius: 70px;
+    border: 0px;
 }
-.actions:active {
+.sprite:active {
     background-color: black;
-    border-radius: 60px 60px 60px 60px;
-    height: 100px;
-    width: 100px;
+    border-radius: 60px;
+    -moz-border-radius: 60px;
+    -webkit-border-radius: 60px;
+    height: 115px;
+    width: 115px;
 }
 #btn-form {
     height: 30%;
