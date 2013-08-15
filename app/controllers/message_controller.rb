@@ -1,7 +1,7 @@
 class MessageController <  ApplicationController
   # POST /get
   def get
-    messages = Message.messages_for_me(session[:session_id])
+    messages = Message.messages_for_me(params[:from],session[:session_id])
     if messages.exists?
       @messages = messages.each do |message|
         username = User.select('name')
@@ -11,11 +11,14 @@ class MessageController <  ApplicationController
       end
         render json: @messages, status: 200
     else 
-      system_message = System.get_system_message(session[:session_id],'disconnect')
-      if system_message.exists? 
-        render json: system_message, status: 201
+      system_message = System.get_system_message(params[:from],session[:session_id],'disconnect')
+      if system_message == [] 
+        system_message.read_system_message(params[:from],session[:session_id],'disconnect')
+        render json: {}, status: 200
       else
-        render json: system_message, status: 200
+        system_message.read_system_message(params[:from],session[:session_id],'disconnect') 
+        render json: {}, status: 201
+        
       end
     end
   end

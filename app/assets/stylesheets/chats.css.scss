@@ -16,6 +16,7 @@ html {
     height: 20%;
     position: relative;
     width: 100%;
+    z-index: -1;
 }
 #header #logo {
     height: 100%;
@@ -29,7 +30,6 @@ html {
 }
 #content {
     height: 80%;
-    position: relative;
     width: 100%;
 }
 .content-wrapper {
@@ -169,6 +169,7 @@ html {
     min-height: 400px;
     overflow: hidden;
     width: 100%;
+    position:relative;
 }
 .my-message {
     color: #93CDED;
@@ -236,8 +237,9 @@ li .where {
     cursor: pointer;
     float: right;
     height: 10%;
-    margin-right: 1%;
     width: 5%;
+    position: absolute;
+    right: 0;
 }
 #exit-btn {
     background: inherit;

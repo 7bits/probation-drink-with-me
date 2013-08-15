@@ -8,9 +8,9 @@ $(document).ready(function(){
     close()
   });*/
    
-    $('.chat').append("<li class='my-message'><span class='where'>кому-то : </span><span class = 'message' >Текст сообщения</span></li>");
+    $('.chat').append("<li class='my-message'><span class='where'>кому-то</span><span class = 'message' >: Текст сообщения</span></li>");
     $('.chat').append("<li class='system-respond'><span class='where'></span><span class = 'message'> Установлено соединение с </span></li>");
-    $('.chat').append("<li class='dude-message'><span class='where'>Собеседник :  </span><span class = 'message'>Его сообщение</span></li>");
+    $('.chat').append("<li class='dude-message'><span class='where'>Собеседник</span><span class = 'message'>: Его сообщение</span></li>");
    
 
   //Отправка сообщения
@@ -36,8 +36,9 @@ $(document).ready(function(){
   })
   // принудительное закрытие соединения
   $('#exit-btn').click(function() { 
-    if (idInterval != 0)
-      stopInterval()
+    if (idInterval != 0){
+      disconnect();
+    }
   })
   
 })

@@ -1,12 +1,13 @@
 #modal-window {
     background: inherit;
     box-shadow: 0 0 11px 4px black, 0 0 0 1px #516EC5 inset;
+    display: none;
     height: 20%;
     left: 35%;
+    min-width: 250px;
     position: absolute;
     top: 40%;
     width: 30%;
-    display:none;
 }
 #window-wrapper {
     height: 95%;
@@ -61,9 +62,10 @@
     border-radius: 10px 10px 10px 10px;
     box-shadow: 0 0 0 1px #516EC5;
     color: #7F7AA5;
-    display: inline-block;
+    float: left;
     height: 80%;
     line-height: 200%;
     text-align: center;
     width: 48%;
+    margin-left: 0.7%;
 }

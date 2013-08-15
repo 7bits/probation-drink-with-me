@@ -21,7 +21,8 @@ class SearchController < ApplicationController
   end
 
   def get_user
-    data = System.get_system_message(session[:session_id],'connect').last
+    data = System.get_system_message("",session[:session_id],'connect').last
+    System.read_system_message("",session[:session_id],'connect')
     render json: data, status: 200
   end
 end

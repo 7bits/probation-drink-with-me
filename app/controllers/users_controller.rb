@@ -43,8 +43,8 @@ class UsersController < ApplicationController
   end
 
   def disconnect
-    message = System.create_system_message_disconnect(params[:session])
-    render json: {}
+    message = System.create_system_message_disconnect(session[:session_id],params[:session])
+    render json: message
   end
   
 end

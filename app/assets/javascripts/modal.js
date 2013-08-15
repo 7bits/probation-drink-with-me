@@ -18,10 +18,11 @@ function windowError(text){
 
 function windowQuestion(text){
 	windowShow();
-	var status
 	$('#yes-btn').click(function(){
-		windowHide();
-		changeUser();
+			windowHide();
+      stopInterval();
+      setStatus();
+		
 	})
 	$('#no-btn').click(function(){
 		windowHide();
@@ -29,13 +30,14 @@ function windowQuestion(text){
 }
 
 function windowShow(){
-	$('#modal-window,#btn-'+type_btn).css('display','block');
+	$('#modal-window').css('display','block');
+	$('#btn-'+type_btn).css('display','block');
 }
 function windowHide(){
-	$('#modal-window,#btn-'+type_btn).css('display','none');
+	$('#modal-window').css('display','none');
+	$('#btn-'+type_btn).css('display','none');
 }
 
 function windowContent(text){
-	$('#window-content').html("")
-	$('#window-content').append(text)
+	$('#window-content').html(text)
 }

@@ -10,83 +10,85 @@
     })
   }
   function setStatus(){
+    if (idInterval != 0) {
+      disconnect();
+    }
     showSpinner();
-    stopInterval();
     $.ajax({
       url:'/set_status',
       type:'POST',
-      success:function(){ setTimeout(search,10000) },
-      error:function(){ windowModal('error',"Что-то пошло не так"); }
-    })
-  }
-  function search(){
-    idInterval = 0;
-    sessionInterlocutor = 0;
-    nameInterlocutor = 0;
-    $.ajax({
-      url: '/search',
-      type:'POST',
-      statusCode:{
-        200: function(responceData) {
-          sessionInterlocutor = responceData.session
-          nameInterlocutor = responceData.name
-          hideSpinner();
-          $('.chat')
-              .append("<li class='system-respond'><span class='where'></span><span class = 'message'> Установлено соединение с " + nameInterlocutor + "</span></li>");
-          startInterval(getMessage)
-        },
-        201: function() {
-          $.ajax({
-            url: '/user_info',
-            dataType: 'json',
-            type: 'POST',
-            success: function(responceData){
-              json = JSON.parse(responceData.message)
-              sessionInterlocutor = json.session
-              nameInterlocutor = json.name
-              hideSpinner();
-              systemMessage();
-              $(nameInterlocutor).appendTo('#name_dude');
-              startInterval(getMessage)
-            },
-            error: function(){
-              hideSpinner();
-                windowModal('error',"Ну воооот, опять все сломалось(((((")
-            }
-          })
-          
-
-        },
-        404: function(responceData) {
-              hideSpinner();
-          windowModal('error',"Нет активных пользоавтелей");
-
-        },
-        500: function(responceData) {
-              hideSpinner();
-          windowModal('error',"Произошло что-то непоправимое. Локальный апокалипсис");
-          stopInterval();
-        }
+      success:function(){ setTimeout(function(){ search()},5000) },
+      error:function(){ 
+        hideSpiner();
+        windowModal('error',"Что-то пошло не так"); 
       }
     })
   }
+  function search(){
+      $.ajax({
+        url: '/search',
+        type:'POST',
+        statusCode:{
+          200: function(responceData) {
+            sessionInterlocutor = responceData.session
+            nameInterlocutor = responceData.name
+            hideSpinner();
+            systemMessage();
+            startInterval()
+          },
+          201: function() {
+            $.ajax({
+              url: '/user_info',
+              dataType: 'json',
+              type: 'POST',
+              success: function(responceData){
+                json = JSON.parse(responceData.message)
+                sessionInterlocutor = json.session
+                nameInterlocutor = json.name
+                hideSpinner();
+                systemMessage();
+                startInterval()
+              },
+              error: function(){
+                hideSpinner();
+                windowModal('error',"Ну воооот, опять все сломалось(((((")
+              }
+            })
+            
+
+          },
+          404: function(responceData) {
+            hideSpinner();
+            windowModal('error',"Нет активных пользоавтелей");
+
+          },
+          500: function(responceData) {
+            hideSpinner();
+            windowModal('error',"Произошло что-то непоправимое. Локальный апокалипсис");
+            stopInterval();
+          }
+        } 
+    })
+    
+  }
 
   // запуск соединения с сервером сообщений
-  function startInterval(callback){ idInterval = setInterval(callback,1000) }
+  function startInterval(){ idInterval = setInterval(function(){getMessage()},1000) }
   // ЗАкрытие соединения
-  function stopInterval(){ 
-
-    if (idInterval != 0) disconnect();
-    clearInterval(idInterval) 
+  function stopInterval(){
+    clearInterval(idInterval)
+    idInterval = 0; 
   }
   // Получение сообений
   function getMessage(){
+    if (idInterval == 0 ) return 0
+      else
     $.ajax({
       url:'/get_message',
       type:'POST',
       dataType:'json',
       data:{
-        where: sessionInterlocutor
+        from : sessionInterlocutor
       },
       statusCode:{
         200: function(msg){
@@ -111,7 +113,7 @@
         },
         201:function(){
           windowModal('error',"Собеседник ушел");
-          //stopInterval();
+          stopInterval();
         }
       },
       error: function(){
@@ -140,9 +142,7 @@
   }
 
   function disconnect(){
-    idInterval = 0;
-    sessionInterlocutor = 0;
-    nameInterlocutor = 0;
+    stopInterval();
     $.ajax({
       url:'/disconnect',
       type:'POST',
@@ -151,17 +151,14 @@
         session: sessionInterlocutor
       },
       success: function(){
-
+        sessionInterlocutor = 0;
+        nameInterlocutor = 0;
       },
       error: function(){
 
       }
     })
-  }
 
-  function changeUser(){
-    stopInterval(idInterval);
-    setStatus();
   }
 
   function myMessage(){
