@@ -3,6 +3,7 @@ body, html {
     margin: 0;
     padding: 0;
     width: 100%;
+    font-family: verdana, sans-serif;
 }
 html {
     background-attachment: fixed;
@@ -43,7 +44,7 @@ html {
 }
 #content #text {
     color: #9370DB;
-    font-size: 14pt;
+    font-size: 12pt;
     padding: 15px;
     text-align: center;
 }
@@ -53,7 +54,7 @@ html {
 }
 #nick {
     color: #AFEEEE;
-    font-size: 12pt;
+    font-size: 10pt;
     padding: 0;
 }
 #user_name {
@@ -85,6 +86,8 @@ html {
     color: #CC00FF;
     height: 97px;
     width: 97px;
+    font-family: verdana, sans-serif;
+
 }
 .sprite:active {
     background-color: black;
@@ -115,9 +118,11 @@ html {
 }
 #btn-form .btn-send {
     width: 55%;
+    font-size: 11px;
 }
 #btn-form .btn-search {
     width: 35%;
+     font-size: 11px;
 }
 #new_chat {
     height: 30%;
@@ -153,6 +158,7 @@ html {
     top: 0;
 }
 .exit-bar a {
+    font-size: 12pt;
     color: #7F7AA5;
     text-decoration: none;
 }
