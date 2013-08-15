@@ -1,5 +1,4 @@
 $(document).ready(function(){
-
   idInterval = 0;
   my_name = $('#my_name').val();
   sessionInterlocutor = 0;
@@ -32,10 +31,7 @@ $(document).ready(function(){
     if(idInterval==0){
       setStatus();
     }else{
-      if(windowModal('','Вы действительно хотите cменить пользователя?')){
-        stopInterval(idInterval);
-        setStatus();
-      }
+      windowModal('','Вы действительно хотите cменить пользователя?')  
     }
   })
   // принудительное закрытие соединения

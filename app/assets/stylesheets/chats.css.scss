@@ -89,8 +89,8 @@ html {
 .sprite:active {
     background-color: black;
     border-radius: 60px 60px 60px 60px;
-    height: 115px;
-    width: 115px;
+    height: 97px;
+    width: 97px;
 }
 #btn-form {
     height: 30%;
@@ -219,4 +219,11 @@ li .where {
   min-width: 260px;
   text-align: center;
   width: 30%;
+}
+#btn-search:active,
+#btn-send:active,
+#ok-btn:active,
+#yes-btn:active,
+#no-btn:active{
+  background: inherit;
 }

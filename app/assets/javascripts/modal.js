@@ -2,10 +2,10 @@ function windowModal(type,text){
 	windowContent(text)
 	if (type == 'error'){
 		type_btn ='ok';
-		return windowError(text);
+		windowError(text);
 	}else {
 		type_btn ='yes-no' 
-		return windowQuestion(text);
+		windowQuestion(text);
 	}
 }
 
@@ -21,13 +21,11 @@ function windowQuestion(text){
 	var status
 	$('#yes-btn').click(function(){
 		windowHide();
-		status = true;
+		changeUser();
 	})
 	$('#no-btn').click(function(){
 		windowHide();
-		status = false;
 	})
-	return status;
 }
 
 function windowShow(){

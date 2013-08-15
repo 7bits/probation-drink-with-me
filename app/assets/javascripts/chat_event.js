@@ -157,6 +157,12 @@
       }
     })
   }
+
+  function changeUser(){
+    stopInterval(idInterval);
+    setStatus();
+  }
+  
   function myMessage(){
     $('.chat').append("<li class='my-message'><span class='where'>"+ my_name +"</span><span class = 'message'>"+$('#chat_message').val()+"</span></li>");
   }
@@ -166,6 +172,7 @@
   function systemMessage(){
     $('.chat').append("<li class='system-respond'><span class='where'></span><span class = 'message'> Установлено соединение с " + nameInterlocutor + "</span></li>");           
   }
+
   function showSpinner(){
     $('#spiner_img').css('display','block');
   };
