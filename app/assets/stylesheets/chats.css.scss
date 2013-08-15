@@ -1,9 +1,9 @@
 body, html {
+    font-family: verdana,sans-serif;
     height: 100%;
     margin: 0;
     padding: 0;
     width: 100%;
-    font-family: verdana, sans-serif;
 }
 html {
     background-attachment: fixed;
@@ -37,6 +37,8 @@ html {
     box-shadow: 3px 3px 20px 3px black inset, -2px -2px;
     float: right;
     height: 80%;
+    max-height: 800px;
+    min-height: 500px;
     position: relative;
     right: 15%;
     top: 10%;
@@ -84,10 +86,9 @@ html {
     border: 0 none;
     border-radius: 70px 70px 70px 70px;
     color: #CC00FF;
+    font-family: verdana,sans-serif;
     height: 97px;
     width: 97px;
-    font-family: verdana, sans-serif;
-
 }
 .sprite:active {
     background-color: black;
@@ -117,17 +118,17 @@ html {
     width: 50%;
 }
 #btn-form .btn-send {
-    width: 55%;
     font-size: 11px;
+    width: 55%;
 }
 #btn-form .btn-search {
+    font-size: 11px;
     width: 35%;
-     font-size: 11px;
 }
 #new_chat {
     height: 30%;
     margin: 0 auto;
-    width: 70%;
+    width: 85%;
 }
 #chat_message {
     background: none repeat scroll 0 0 #111111;
@@ -145,9 +146,10 @@ html {
     height: 69%;
     list-style: none outside none;
     margin: 0 auto;
+    overflow-x: hidden;
     padding: 0;
     position: relative;
-    width: 70%;
+    width: 85%;
 }
 .exit-bar {
     background: none repeat scroll 0 0 #111111;
@@ -158,42 +160,43 @@ html {
     top: 0;
 }
 .exit-bar a {
-    font-size: 12pt;
     color: #7F7AA5;
+    font-size: 12pt;
     text-decoration: none;
 }
 #chat_wrapper {
     height: 100%;
     margin: 0 auto;
+    min-height: 400px;
     overflow: hidden;
     width: 100%;
 }
 .my-message {
     color: #93CDED;
+    width: 100%;
 }
 .dude-message {
     color: #6B60B4;
 }
 li .where {
     display: inline-block;
+    float: left;
     text-align: right;
-    width: 19%;
-}
-.chat li {
-    left: -20%;
-    position: relative;
+    width: 20%;
 }
 .message {
-    margin-left: 2%;
-    position: absolute;
-    width: 99%;
+    display: inline-block;
+    float: right;
+    padding-left: 1%;
+    vertical-align: top;
+    width: 79%;
 }
 .system-respond .message {
     background: none repeat scroll 0 0 #252525;
     color: #AAAAAA;
     display: inline-block;
     font-style: italic;
-    margin-left: 1%;
+    margin: 0;
     text-align: center;
     width: 100%;
 }
@@ -215,27 +218,22 @@ li .where {
     margin-top: 2%;
     width: 100%;
 }
-#new_user{
-  height: 60%;
-  margin-top: 5%;
-  width: 100%;
+#new_user {
+    height: 60%;
+    margin-top: 5%;
+    width: 100%;
 }
-#common-wrapper{
-  margin: 0 auto;
-  min-width: 260px;
-  text-align: center;
-  width: 30%;
+#common-wrapper {
+    margin: 0 auto;
+    min-width: 260px;
+    text-align: center;
+    width: 30%;
 }
-#btn-search:active,
-#btn-send:active,
-#ok-btn:active,
-#yes-btn:active,
-#no-btn:active{
-  background: inherit;
+#btn-search:active, #btn-send:active, #ok-btn:active, #yes-btn:active, #no-btn:active {
+    background: inherit;
 }
 #exit-chat {
     background: inherit;
-    box-shadow: 0 0 2px 1px #516EC5;
     cursor: pointer;
     height: 10%;
     margin: 1% 1% 0 0;
@@ -244,10 +242,10 @@ li .where {
     top: 0;
     width: 5%;
 }
-#exit-btn{
-  position: absolute;
-  top:0;
-  right: 0;
-  width:  100%;
-  height:100%; 
+#exit-btn {
+    box-shadow: 0 0 2px 1px #516EC5;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
 }
