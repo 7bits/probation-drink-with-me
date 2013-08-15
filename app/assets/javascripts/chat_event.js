@@ -10,6 +10,7 @@
     })
   }
   function setStatus(){
+    showSpinner();
     if (sessionInterlocutor != 0) {
       disconnect();
     }
@@ -31,6 +32,7 @@
         200: function(responceData) {
           sessionInterlocutor = responceData.session
           nameInterlocutor = responceData.name
+          hideSpinner();
           $('.chat')
               .append("<li class='system-respond'><span class='where'></span><span class = 'message'> Установлено соединение с " + nameInterlocutor + "</span></li>");
           startInterval(getMessage)
@@ -43,13 +45,14 @@
             success: function(responceData){
               json = JSON.parse(responceData.message)
               sessionInterlocutor = json.session
-              console.log(sessionInterlocutor)
               nameInterlocutor = json.name
+              hideSpinner();
               systemMessage();
               $(nameInterlocutor).appendTo('#name_dude');
               startInterval(getMessage)
             },
             error: function(){
+              hideSpinner();
                 windowModal('error',"Ну воооот, опять все сломалось(((((")
             }
           })
@@ -57,10 +60,12 @@
 
         },
         404: function(responceData) {
+              hideSpinner();
           windowModal('error',"Нет активных пользоавтелей");
 
         },
         500: function(responceData) {
+              hideSpinner();
           windowModal('error',"Произошло что-то непоправимое. Локальный апокалипсис");
           stopInterval();
           disconnect();
@@ -86,7 +91,7 @@
         200: function(msg){
           var message = JSON.parse(JSON.stringify( msg ))
           for (var i = 0 ; i < message.length ; i++){
-            message(message);
+            messageDude(message[i].from,message[i].message);
             $.ajax({
               url: '/read_message',
               type: 'POST',
@@ -153,11 +158,17 @@
     })
   }
   function myMessage(){
-    $('.chat').append("<li class='my-message'><span class='where'>кому-то : </span><span class = 'message'>"+$('#chat_message').val()+"</span></li>");
+    $('.chat').append("<li class='my-message'><span class='where'>"+ my_name +"</span><span class = 'message'>"+$('#chat_message').val()+"</span></li>");
   }
-  function message(){
-    $('.chat').append("<li class='dude-message'><span class='where'>" + message.from + ":  </span><span class = 'message'>" + message.message + "</span></li>");
+  function messageDude(name,message){
+    $('.chat').append("<li class='dude-message'><span class='where'>" + name + "</span><span class = 'message'>" + message + "</span></li>");
   }
   function systemMessage(){
     $('.chat').append("<li class='system-respond'><span class='where'></span><span class = 'message'> Установлено соединение с " + nameInterlocutor + "</span></li>");           
   }
+  function showSpinner(){
+    $('#spiner_img').css('display','block');
+  };
+  function hideSpinner() {
+    $('#spiner_img').css('display','none');
+  };

@@ -31,12 +31,12 @@ $(document).ready(function(){
   $('#btn-search').click(function(){
     if(idInterval==0){
       setStatus();
-      }else{
-        if(windowModal('','Вы действительно хотите cменить пользователя?')){
-          stopInterval(idInterval);
-          setStatus();
-        }
+    }else{
+      if(windowModal('','Вы действительно хотите cменить пользователя?')){
+        stopInterval(idInterval);
+        setStatus();
       }
+    }
   })
   // принудительное закрытие соединения
   $('#btn-close').click(stopInterval)

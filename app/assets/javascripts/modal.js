@@ -13,7 +13,6 @@ function windowError(text){
 	windowShow();
 	$('#ok-btn').click(function(){
 		windowHide();
-		status = true;
 	})
 }
 
@@ -28,6 +27,7 @@ function windowQuestion(text){
 		windowHide();
 		status = false;
 	})
+	return status;
 }
 
 function windowShow(){

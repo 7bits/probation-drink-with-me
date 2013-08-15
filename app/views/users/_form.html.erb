@@ -3,11 +3,15 @@
 <%= form_for(@user) do |f| %>
 
 	<div class="common-field">
-   		<%= f.text_field :name ,:size => 10 %>
+		<div id='common-wrapper'>
+			<span id = 'nick' >Your nickname</span>
+   			<%= f.text_field :name ,:size => 10 %>
+		</div>
 	</div>
-
-	<div class="sprite"><!--img src="assets/sprite.png"  alt="g" /-->
-  		<%= f.submit %>
-    </div>
+	<div id = 'sprite_wrapepr'>
+		<div class="sprite"><!--img src="assets/sprite.png"  alt="g" /-->
+	  		<%= f.submit %>
+	    </div>
+	</div>
 
 <% end %>
