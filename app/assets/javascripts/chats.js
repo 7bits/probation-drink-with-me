@@ -35,6 +35,9 @@ $(document).ready(function(){
     }
   })
   // принудительное закрытие соединения
-  $('#exit-btn').click(stopInterval)
+  $('#exit-btn').click(function() { 
+    if (idInterval != 0)
+      stopInterval()
+  })
   
 })

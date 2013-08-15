@@ -1,22 +1,20 @@
+
 body, html {
     font-family: verdana,sans-serif;
     height: 100%;
     margin: 0;
+    min-height: 800px;
+    min-width: 768px;
     padding: 0;
+    position: relative;
     width: 100%;
 }
 html {
-    background-attachment: fixed;
-    background-clip: border-box;
-    background-color: transparent;
-    background-image: url("/assets/brick.jpg");
-    background-origin: padding-box;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: url("/assets/brick.jpg") no-repeat fixed center center / cover transparent;
 }
 #header {
     height: 20%;
+    position: relative;
     width: 100%;
 }
 #header #logo {
@@ -26,22 +24,22 @@ html {
 #header #logo img {
     margin-left: -30px;
     margin-top: -10px;
+    max-width: 550px;
     width: 70%;
 }
 #content {
     height: 80%;
+    position: relative;
     width: 100%;
 }
 .content-wrapper {
     background: none repeat scroll 0 0 #111111;
     box-shadow: 3px 3px 20px 3px black inset, -2px -2px;
-    float: right;
     height: 80%;
-    max-height: 800px;
+    margin: 0 auto;
+    max-height: 700px;
     min-height: 500px;
-    position: relative;
-    right: 15%;
-    top: 10%;
+    min-width: 650px;
     width: 60%;
 }
 #content #text {
@@ -77,9 +75,9 @@ html {
     width: 97px;
 }
 .sprite:hover {
-    -moz-transform: rotate(360deg) scale(1.2);
     border: 1px solid #CC00FF;
     box-shadow: 0 0 1px 4px #6600CC, 0 0 1px 5px #99CCFF, 0 0 1px 8px #33CCFF, 0 0 30px #9999FF;
+    transform: rotate(360deg) scale(1.2);
 }
 .sprite input {
     background: none repeat scroll 0 0 transparent;
@@ -154,6 +152,7 @@ html {
 .exit-bar {
     background: none repeat scroll 0 0 #111111;
     border-radius: 10px 10px 10px 10px;
+    box-shadow: 0 0 2px 1px #516EC5;
     padding: 10px;
     position: absolute;
     right: 5%;
@@ -229,23 +228,20 @@ li .where {
     text-align: center;
     width: 30%;
 }
-#btn-search:active, #btn-send:active, #ok-btn:active, #yes-btn:active, #no-btn:active {
+#btn-search:active, #btn-send:active, #ok-btn:active, #yes-btn:active, #no-btn:active, #exit-btn:active {
     background: inherit;
 }
 #exit-chat {
     background: inherit;
     cursor: pointer;
+    float: right;
     height: 10%;
-    margin: 1% 1% 0 0;
-    position: absolute;
-    right: 0;
-    top: 0;
+    margin-right: 1%;
     width: 5%;
 }
 #exit-btn {
+    background: inherit;
     box-shadow: 0 0 2px 1px #516EC5;
-    height: 100%;
-    position: absolute;
-    right: 0;
-    top: 0;
+    cursor: pointer;
+    min-height: 30px;
 }

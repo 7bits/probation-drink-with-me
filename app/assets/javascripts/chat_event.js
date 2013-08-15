@@ -75,7 +75,8 @@
   function startInterval(callback){ idInterval = setInterval(callback,1000) }
   // ЗАкрытие соединения
   function stopInterval(){ 
-    disconnect();
+
+    if (idInterval != 0) disconnect();
     clearInterval(idInterval) 
   }
   // Получение сообений
