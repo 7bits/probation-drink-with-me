@@ -17,7 +17,7 @@ $(document).ready(function(){
   //Отправка сообщения
   $('#btn-send').click(function(){
     if(validation()){
-      myMesssage();
+      myMessage();
       sendMessage();
       $('#chat_message').val('');
     }	

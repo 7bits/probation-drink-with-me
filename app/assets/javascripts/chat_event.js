@@ -21,6 +21,9 @@
     })
   }
   function search(){
+    idInterval = 0;
+    sessionInterlocutor = 0;
+    nameInterlocutor = 0;
     $.ajax({
       url: '/search',
       type:'POST',
@@ -131,6 +134,9 @@
   }
 
   function disconnect(){
+    idInterval = 0;
+    sessionInterlocutor = 0;
+    nameInterlocutor = 0;
     $.ajax({
       url:'/disconnect',
       type:'POST',
