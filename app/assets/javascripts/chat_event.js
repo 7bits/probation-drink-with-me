@@ -11,9 +11,7 @@
   }
   function setStatus(){
     showSpinner();
-    if (sessionInterlocutor != 0) {
-      disconnect();
-    }
+    stopInterval();
     $.ajax({
       url:'/set_status',
       type:'POST',
@@ -68,7 +66,6 @@
               hideSpinner();
           windowModal('error',"Произошло что-то непоправимое. Локальный апокалипсис");
           stopInterval();
-          disconnect();
         }
       }
     })
@@ -77,7 +74,10 @@
   // запуск соединения с сервером сообщений
   function startInterval(callback){ idInterval = setInterval(callback,1000) }
   // ЗАкрытие соединения
-  function stopInterval(){ clearInterval(idInterval) }
+  function stopInterval(){ 
+    disconnect();
+    clearInterval(idInterval) 
+  }
   // Получение сообений
   function getMessage(){
     $.ajax({
@@ -162,7 +162,7 @@
     stopInterval(idInterval);
     setStatus();
   }
-  
+
   function myMessage(){
     $('.chat').append("<li class='my-message'><span class='where'>"+ my_name +"</span><span class = 'message'>"+$('#chat_message').val()+"</span></li>");
   }

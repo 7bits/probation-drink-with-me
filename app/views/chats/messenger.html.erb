@@ -3,7 +3,9 @@
 <%= javascript_include_tag "chats.js"%>
 
 <div class="content-wrapper"> 
-	
+	<div id='exit-chat'>
+		<%= image_tag 'exit.png', :id => 'exit-btn' %>
+	</div>
 	<input type='hidden' id='my_name' value='<%= @name.name %>'>
 	<div id='chat_wrapper'>
 		<ul class='chat' >
